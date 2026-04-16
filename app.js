@@ -684,7 +684,7 @@ function showWordPopup(word, _el) {
       startStudyWithWord(found.id);
     });
   } else {
-    // Not in vault — show loading, then fetch from dictionary
+    // Not in vault — show loading, then fetch from dictionary + translation
     body.innerHTML = `<div class="wp-fetching">⟳ 查詢字典中…</div>`;
 
     fetchWordInfoForPopup(word).then(info => {
@@ -692,16 +692,18 @@ function showWordPopup(word, _el) {
         ${info.phonetic ? `<div class="wp-phonetic">${info.phonetic}</div>` : ''}
         ${info.pos      ? `<div class="wp-pos">${info.pos}</div>`           : ''}
         ${info.def      ? `<div class="wp-en-def">${info.def}</div>`        : ''}
-        ${info.example  ? `<div class="wp-example">"${info.example}"</div>`: ''}
         <div class="wp-quick-add">
-          <input type="text" id="wpDefInput" placeholder="輸入中文意思">
+          <div class="wp-field-label">中文意思</div>
+          <input type="text" id="wpDefInput" placeholder="中文意思" value="${(info.zh || '').replace(/"/g, '&quot;')}">
+          <div class="wp-field-label">例句（可修改）</div>
+          <textarea id="wpExInput" rows="2" placeholder="英文例句">${info.example || ''}</textarea>
           <button class="btn-primary" id="wpQuickAdd">加入 WordVault ✓</button>
         </div>
       `;
-      setTimeout(() => document.getElementById('wpDefInput')?.focus(), 100);
 
       document.getElementById('wpQuickAdd').addEventListener('click', () => {
-        const def = document.getElementById('wpDefInput').value.trim();
+        const def     = document.getElementById('wpDefInput').value.trim();
+        const example = document.getElementById('wpExInput').value.trim();
         if (!def) { document.getElementById('wpDefInput').focus(); return; }
         const newWord = makeWord({
           id:         'u_' + Date.now(),
@@ -709,7 +711,7 @@ function showWordPopup(word, _el) {
           phonetic:   info.phonetic || '',
           pos:        info.pos      || '',
           definition: def,
-          example:    info.example  || '',
+          example:    example,
           difficulty: 'hard',
           tags:       ['from-article']
         }, true);
@@ -728,21 +730,36 @@ function showWordPopup(word, _el) {
 
 async function fetchWordInfoForPopup(word) {
   try {
-    const res = await fetch(
-      `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`
-    );
-    if (!res.ok) return {};
-    const data    = await res.json();
-    const entry   = data[0];
-    const meaning = entry.meanings?.[0];
-    const defObj  = meaning?.definitions?.[0];
-    const posRaw  = meaning?.partOfSpeech || '';
-    return {
-      phonetic: entry.phonetic || entry.phonetics?.find(p => p.text)?.text || '',
-      pos:      POS_MAP[posRaw] || (posRaw ? posRaw + '.' : ''),
-      def:      defObj?.definition || '',
-      example:  defObj?.example    || ''
-    };
+    // Fetch English definition and Chinese translation in parallel
+    const [dictRes, zhRes] = await Promise.allSettled([
+      fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`),
+      fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(word)}&langpair=en|zh-TW`)
+    ]);
+
+    let phonetic = '', pos = '', def = '', example = '', zh = '';
+
+    // Parse English dictionary
+    if (dictRes.status === 'fulfilled' && dictRes.value.ok) {
+      const data    = await dictRes.value.json();
+      const entry   = data[0];
+      const meaning = entry.meanings?.[0];
+      const defObj  = meaning?.definitions?.[0];
+      const posRaw  = meaning?.partOfSpeech || '';
+      phonetic = entry.phonetic || entry.phonetics?.find(p => p.text)?.text || '';
+      pos      = POS_MAP[posRaw] || (posRaw ? posRaw + '.' : '');
+      def      = defObj?.definition || '';
+      example  = defObj?.example    || '';
+    }
+
+    // Parse Chinese translation
+    if (zhRes.status === 'fulfilled' && zhRes.value.ok) {
+      const zhData = await zhRes.value.json();
+      zh = zhData?.responseData?.translatedText || '';
+      // Clean up: remove anything that looks like an error or is just the word itself
+      if (zh.toLowerCase() === word.toLowerCase() || zh.includes('INVALID')) zh = '';
+    }
+
+    return { phonetic, pos, def, example, zh };
   } catch {
     return {};
   }
