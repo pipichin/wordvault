@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WordVault — 英文單字學習</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#6C63FF">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="WordVault">
+  <link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar">
+    <div class="brand-name">📚 WordVault</div>
+    <div class="nav-links">
+      <button class="nav-btn active" data-view="home">首頁</button>
+      <button class="nav-btn" data-view="study">學習</button>
+      <button class="nav-btn" data-view="read">閱讀</button>
+      <button class="nav-btn" data-view="add">新增</button>
+      <button class="nav-btn" data-view="library">單字庫</button>
+    </div>
+    <div>
+      <span class="streak-badge">🔥 <span id="streakCount">0</span> 天</span>
+    </div>
+  </nav>
+
+  <!-- ===== Main ===== -->
+  <main class="main">
+
+    <!-- ====== HOME VIEW ====== -->
+    <div id="homeView" class="view active">
+
+      <div class="home-greeting">
+        <h1 id="greetingText">Good morning! 👋</h1>
+        <p class="home-subtitle">每天學一點，英文進步快</p>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-box">
+          <div class="stat-num" id="statTotal">0</div>
+          <div class="stat-lbl">總單字</div>
+        </div>
+        <div class="stat-box accent">
+          <div class="stat-num" id="statDue">0</div>
+          <div class="stat-lbl">待複習</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num" id="statKnown">0</div>
+          <div class="stat-lbl">已掌握</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num" id="statToday">0</div>
+          <div class="stat-lbl">今日已學</div>
+        </div>
+      </div>
+
+      <div class="wod-section">
+        <div class="section-label">✨ 今日單字</div>
+        <div class="wod-card" id="wodCard">
+          <div class="wod-word">Loading…</div>
+        </div>
+      </div>
+
+      <div class="home-actions">
+        <button class="btn-primary btn-lg" id="btnStartStudy">開始學習</button>
+        <button class="btn-outline btn-lg" id="btnReviewDue">複習待學單字</button>
+      </div>
+    </div>
+
+    <!-- ====== STUDY VIEW ====== -->
+    <div id="studyView" class="view">
+
+      <div class="study-top">
+        <button class="btn-ghost" id="btnBackFromStudy">← 返回</button>
+        <div class="study-progress-wrap">
+          <div class="study-progress-bar">
+            <div class="study-progress-fill" id="studyProgressFill" style="width:0%"></div>
+          </div>
+          <span class="study-progress-text" id="studyProgressText">0 / 0</span>
+        </div>
+      </div>
+
+      <!-- Flashcard -->
+      <div class="card-stage">
+        <div class="flashcard" id="flashcard" tabindex="0">
+          <div class="card-inner" id="cardInner">
+            <div class="card-face card-front">
+              <span class="card-pos" id="cardPos"></span>
+              <div class="card-word" id="cardWord">—</div>
+              <div class="card-phonetic" id="cardPhonetic"></div>
+              <div class="card-hint">點此翻牌查看答案</div>
+            </div>
+            <div class="card-face card-back">
+              <span class="card-pos" id="cardPosBack"></span>
+              <div class="card-word-sm" id="cardWordBack"></div>
+              <div class="card-def" id="cardDef"></div>
+              <div class="card-example" id="cardExample"></div>
+              <div class="card-tags" id="cardTags"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rating buttons (shown after flip) -->
+      <div class="rating-row" id="ratingRow" style="display:none">
+        <button class="rate-btn rate-hard" data-quality="1">
+          <div class="rate-emoji">😰</div>
+          <div class="rate-label">困難</div>
+          <div class="rate-next" id="nextHard"></div>
+        </button>
+        <button class="rate-btn rate-good" data-quality="3">
+          <div class="rate-emoji">👍</div>
+          <div class="rate-label">記得</div>
+          <div class="rate-next" id="nextGood"></div>
+        </button>
+        <button class="rate-btn rate-easy" data-quality="5">
+          <div class="rate-emoji">⚡</div>
+          <div class="rate-label">很簡單</div>
+          <div class="rate-next" id="nextEasy"></div>
+        </button>
+      </div>
+
+      <!-- Completion screen -->
+      <div class="study-done" id="studyDone" style="display:none">
+        <div class="done-icon">🎉</div>
+        <h2>太棒了！</h2>
+        <p>今天的學習任務完成了</p>
+        <div class="done-stats">
+          <span>本次共 <strong id="doneCount">0</strong> 個單字</span>
+          <span>•</span>
+          <span>記住了 <strong id="doneKnown">0</strong> 個</span>
+        </div>
+        <button class="btn-primary" id="btnDoneHome">回首頁</button>
+      </div>
+    </div>
+
+    <!-- ====== READ VIEW ====== -->
+    <div id="readView" class="view">
+
+      <!-- Article list home -->
+      <div id="readHome">
+        <div class="view-header">
+          <h2>每日閱讀</h2>
+          <p class="view-subtitle">每天一篇，人文社科英文一次搞定</p>
+        </div>
+
+        <div class="section-label">📖 今日文章</div>
+        <div id="todayArticleCard" class="today-article-card"></div>
+
+        <div class="section-label" style="margin-top:32px">📚 全部文章</div>
+        <div id="articleList" class="article-list"></div>
+      </div>
+
+      <!-- Article detail -->
+      <div id="readDetail" style="display:none">
+        <div class="article-nav-row">
+          <button class="btn-ghost" id="btnBackFromArticle">← 返回</button>
+          <div class="article-topic-chip" id="detailTopic"></div>
+        </div>
+        <h2 class="article-title" id="detailTitle"></h2>
+        <div class="article-meta-row">
+          <span class="article-meta-item" id="detailDiff"></span>
+          <span class="article-meta-sep">·</span>
+          <span class="article-meta-item" id="detailTime"></span>
+          <span class="article-meta-sep">·</span>
+          <span class="article-meta-item tap-hint">點單字查意思 👇</span>
+        </div>
+        <div class="article-body" id="detailBody"></div>
+        <div class="article-keywords-section">
+          <div class="section-label">🔑 本文關鍵詞彙</div>
+          <div class="article-keywords" id="detailKeywords"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Word Tap Popup (shown when tapping a word in article) -->
+    <div class="popup-backdrop" id="popupBackdrop" style="display:none"></div>
+    <div class="word-popup" id="wordPopup" style="display:none">
+      <div class="wp-header">
+        <div class="wp-word" id="wpWord"></div>
+        <button class="wp-close" id="wpClose">✕</button>
+      </div>
+      <div class="wp-body" id="wpBody"></div>
+    </div>
+
+    <!-- ====== ADD WORD VIEW ====== -->
+    <div id="addView" class="view">
+
+      <div class="view-header">
+        <h2>新增單字</h2>
+        <p class="view-subtitle">把你遇到的新單字加進來吧！</p>
+      </div>
+
+      <form class="add-form" id="addForm">
+        <div class="form-row">
+          <div class="form-group flex2">
+            <label>單字 <span class="required">*</span></label>
+            <div class="word-input-wrap">
+              <input type="text" id="fWord" placeholder="e.g. serendipity" autocomplete="off" required>
+              <span class="lookup-spinner" id="lookupSpinner" style="display:none">⟳</span>
+            </div>
+            <div class="dup-warning" id="dupWarning" style="display:none">⚠️ 這個單字已存在</div>
+            <!-- Auto-lookup result -->
+            <div class="lookup-panel" id="lookupPanel" style="display:none">
+              <div class="lookup-en-label">英文原義（自動查詢）</div>
+              <div class="lookup-en-def" id="lookupEnDef"></div>
+              <div class="lookup-hint">請在下方填入中文意思</div>
+            </div>
+            <div class="lookup-not-found" id="lookupNotFound" style="display:none">
+              查無此字，請手動填寫
+            </div>
+          </div>
+          <div class="form-group">
+            <label>詞性</label>
+            <select id="fPos">
+              <option value="n.">名詞 n.</option>
+              <option value="v.">動詞 v.</option>
+              <option value="adj.">形容詞 adj.</option>
+              <option value="adv.">副詞 adv.</option>
+              <option value="phrase">片語</option>
+              <option value="">其他</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>發音 IPA（可略）</label>
+          <input type="text" id="fPhonetic" placeholder="e.g. /ˌser.ənˈdɪp.ɪ.ti/">
+        </div>
+
+        <div class="form-group">
+          <label>意思 / 定義 <span class="required">*</span></label>
+          <input type="text" id="fDef" placeholder="中文意思，或英文定義" required>
+        </div>
+
+        <div class="form-group">
+          <label>例句（可略，強烈推薦！）</label>
+          <textarea id="fExample" placeholder="用這個單字造個例句，記憶效果更好" rows="2"></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>難度</label>
+            <select id="fDifficulty">
+              <option value="easy">初級</option>
+              <option value="medium" selected>中級</option>
+              <option value="hard">進階</option>
+            </select>
+          </div>
+          <div class="form-group flex2">
+            <label>標籤（逗號分隔，可略）</label>
+            <input type="text" id="fTags" placeholder="e.g. travel, business, idiom">
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">新增單字 ✓</button>
+          <button type="button" class="btn-ghost" id="btnClearForm">清除</button>
+        </div>
+      </form>
+
+      <div class="add-toast" id="addToast" style="display:none">
+        <span>✅ &ldquo;<span id="toastWord"></span>&rdquo; 已新增！</span>
+        <button class="btn-link" id="btnAddAnother">再新增一個</button>
+        <button class="btn-link" id="btnGoStudyFromAdd">去學習</button>
+      </div>
+    </div>
+
+    <!-- ====== LIBRARY VIEW ====== -->
+    <div id="libraryView" class="view">
+
+      <div class="library-top">
+        <h2>單字庫</h2>
+        <div class="search-wrap">
+          <input type="text" id="searchInput" placeholder="🔍 搜尋單字或定義…">
+        </div>
+      </div>
+
+      <div class="filter-row">
+        <button class="filter-btn active" data-filter="all">全部</button>
+        <button class="filter-btn" data-filter="due">待複習</button>
+        <button class="filter-btn" data-filter="new">未學習</button>
+        <button class="filter-btn" data-filter="known">已掌握</button>
+        <button class="filter-btn" data-filter="user">自訂</button>
+      </div>
+
+      <div class="word-count-row">
+        <span id="filteredCount">— 個單字</span>
+      </div>
+
+      <div class="word-grid" id="wordGrid"></div>
+    </div>
+
+  </main>
+
+  <!-- ====== EDIT MODAL ====== -->
+  <div class="modal-overlay" id="modalOverlay" style="display:none">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>編輯單字</h3>
+        <button class="modal-close" id="modalClose">✕</button>
+      </div>
+      <form class="add-form" id="editForm">
+        <div class="form-row">
+          <div class="form-group flex2">
+            <label>單字</label>
+            <input type="text" id="eWord" required>
+          </div>
+          <div class="form-group">
+            <label>詞性</label>
+            <select id="ePos">
+              <option value="n.">名詞 n.</option>
+              <option value="v.">動詞 v.</option>
+              <option value="adj.">形容詞 adj.</option>
+              <option value="adv.">副詞 adv.</option>
+              <option value="phrase">片語</option>
+              <option value="">其他</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>發音 IPA</label>
+          <input type="text" id="ePhonetic">
+        </div>
+        <div class="form-group">
+          <label>意思 / 定義</label>
+          <input type="text" id="eDef" required>
+        </div>
+        <div class="form-group">
+          <label>例句</label>
+          <textarea id="eExample" rows="2"></textarea>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>難度</label>
+            <select id="eDifficulty">
+              <option value="easy">初級</option>
+              <option value="medium">中級</option>
+              <option value="hard">進階</option>
+            </select>
+          </div>
+          <div class="form-group flex2">
+            <label>標籤</label>
+            <input type="text" id="eTags">
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">儲存變更</button>
+          <button type="button" class="btn-danger" id="btnDeleteWord">刪除單字</button>
+          <button type="button" class="btn-ghost" id="btnCancelEdit">取消</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="words-data.js"></script>
+  <script src="articles-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
