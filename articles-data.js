@@ -275,5 +275,95 @@ The pattern has been replicated, with variations, in Poland, Turkey, India, Isra
 Political scientists have identified conditions that tend to protect against backsliding: strong and independent institutions, a robust civil society, a pluralist media environment, and political elites committed to democratic norms. Where these conditions weaken, elected governments find it easier to concentrate power.
 
 The lesson may be that democracy is not a destination but a practice — one that requires constant maintenance, renewal, and vigilance. The institutions we inherit are only as durable as our collective commitment to sustaining them.`
+  },
+
+  {
+    id: 16,
+    title: "Decolonization and Its Unfinished Legacy",
+    topic: "History",
+    difficulty: "hard",
+    readingTime: 4,
+    keyWords: ["colonialism", "imperialism", "reparation", "sovereignty", "indigenous"],
+    body: `Colonialism — the systematic conquest, settlement, and exploitation of non-European territories by European powers — reshaped the world between the fifteenth and twentieth centuries. By the early twentieth century, European empires controlled roughly 85 percent of the earth's land surface. The formal dismantling of these empires, which accelerated after World War Two, is known as decolonization. But the end of formal colonial rule did not erase its consequences.
+
+The decolonization movement gained momentum from multiple forces: wartime promises of self-determination, the moral bankruptcy of racial hierarchy exposed by Nazi atrocities, the rise of nationalist movements across colonized territories, and Cold War calculations that made continued empire strategically costly. India achieved independence in 1947; dozens of African nations followed through the 1960s. By the 1970s, formal empire was largely dismantled.
+
+Yet the structures colonialism created proved remarkably durable. Borders drawn by European administrators — often with deliberate indifference to ethnic and cultural realities — generated conflicts that persist to this day. Colonial economic arrangements oriented resource extraction toward European markets, creating patterns of dependency that persisted long after independence. Legal and administrative systems inherited from colonial rule shaped postcolonial institutions in ways their new leaders could not quickly transform.
+
+The question of historical reparations — whether former colonial powers owe financial compensation to the peoples they exploited — has grown more prominent in recent years. Advocates argue that contemporary global inequality is partly a product of deliberate extraction and that acknowledging this history demands material remedy. Critics question the practicability of calculating liability across generations and contest the precedent such transfers would set.
+
+Perhaps the most contested legacy is cultural. Colonialism imposed not only economic and political subordination but a hierarchy of knowledge that marginalized indigenous traditions and worldviews. The movement to decolonize curricula and museum collections attempts to redress this by centering non-Western perspectives — raising fundamental questions about whose history and whose standards of truth deserve authority in public institutions.`
+  },
+
+  {
+    id: 17,
+    title: "Judicial Review: Courts as Constitutional Guardians",
+    topic: "Law",
+    difficulty: "hard",
+    readingTime: 4,
+    keyWords: ["judiciary", "constitutional", "precedent", "jurisdiction", "accountability"],
+    body: `In democratic systems that separate legislative, executive, and judicial powers, one of the most consequential doctrines is judicial review: the power of courts to strike down laws and executive actions that violate the constitution. This seemingly technical legal mechanism sits at the heart of modern constitutionalism and raises profound questions about the relationship between law and democracy.
+
+The doctrine originated most influentially in the United States. In 1803, Chief Justice John Marshall, in the landmark case Marbury v. Madison, asserted that it was "emphatically the duty of the judicial department to say what the law is." The Supreme Court had the authority, he argued, to declare acts of Congress unconstitutional and void. This power was not explicitly granted in the Constitution; Marshall derived it from structural logic — without enforceable constitutional limits, a constitution is merely aspirational.
+
+The democratic legitimacy of judicial review has been challenged ever since. The objection is straightforward: unelected judges, appointed for life, should not be able to override the decisions of elected legislators who are accountable to voters. Critics argue that contested questions about rights and values belong in the political arena, not in courtrooms insulated from democratic pressure.
+
+Defenders respond that constitutional democracy requires protection for rights that majoritarian politics may threaten. Courts serve as a check on legislative overreach — protecting minorities, free expression, and due process from the tyranny of temporary majorities. Without independent courts empowered to enforce constitutional limits, constitutions become aspirational documents without binding force.
+
+The debate has intensified as governments in Hungary, Poland, and Turkey have moved to weaken judicial independence, recognizing that independent courts are among the most effective barriers against executive overreach. The challenge for constitutional democracies is maintaining judicial independence without insulating courts from all democratic accountability — a tension that no institutional design has fully resolved, and that each generation must navigate anew.`
+  },
+
+  {
+    id: 18,
+    title: "The Science of Conformity: Why We Follow the Crowd",
+    topic: "Psychology",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["conformity", "obedience", "compliance", "normative", "dissent"],
+    body: `Human beings are intensely social creatures. Our survival has long depended not only on individual skill but on cooperation, group cohesion, and the capacity to read and respond to social signals. This evolutionary heritage shapes our psychology in ways we are often unaware of — including a powerful tendency to conform to the beliefs and behaviors of those around us.
+
+The most famous demonstration of conformity's power came from psychologist Solomon Asch in the 1950s. Participants were asked to match the length of lines on cards — a task with objectively correct answers. When placed in groups where actors deliberately gave wrong answers, a significant proportion of real participants abandoned their accurate judgments to match the group. The pressure of social consensus was enough to override the plain evidence of their own eyes.
+
+Stanley Milgram's obedience experiments of the 1960s revealed an even more unsettling dimension of social influence. Participants were instructed by an authority figure to administer electric shocks to another person. Despite apparent distress signals from the supposed victim, the majority continued to comply when directed to do so. Milgram concluded that ordinary people, in the right conditions, could be led to act in ways deeply at odds with their own values — simply because an authority commanded it.
+
+These findings have enduring relevance. They illuminate how ordinary people can participate in institutional misconduct, how peer pressure shapes adolescent risk-taking, and why professional wrongdoing in organizations often goes unchallenged. The tendency to defer to authority and align with the group is not a character flaw; it is a deeply embedded feature of human sociality that served adaptive purposes for most of our evolutionary history.
+
+What the research also reveals is that context matters enormously. Awareness of conformity pressures, organizational cultures that explicitly reward dissent, and the presence of even a single fellow dissenter can dramatically reduce compliance. The lesson is not pessimism about human nature but realism about the conditions under which independent judgment flourishes — and those under which it collapses.`
+  },
+
+  {
+    id: 19,
+    title: "The Myth of Meritocracy: Social Mobility in Question",
+    topic: "Sociology",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["meritocracy", "stratification", "inequality", "mobility", "privilege"],
+    body: `Most modern democracies are built on a compelling promise: that hard work and talent, not the circumstances of birth, will determine individual success. This is the meritocratic ideal — the belief that society's rewards should be distributed according to ability and effort rather than inherited privilege. It is among the most powerful legitimating ideas in contemporary culture. It is also, research increasingly suggests, substantially at odds with reality.
+
+Social mobility — the degree to which individuals can move between positions in the socioeconomic hierarchy — is far lower in most countries than the meritocratic ideal implies. Studies tracking outcomes across generations consistently find that a substantial share of the advantage associated with being born into a wealthy family persists for multiple generations. In the United States, often celebrated as the "land of opportunity," intergenerational mobility is lower than in many European countries with stronger social safety nets.
+
+The mechanisms are numerous and self-reinforcing. Children from affluent families benefit from better-resourced schools, more stimulating home environments, richer professional networks, and the ability to absorb setbacks — an unpaid internship, a failed venture — that less privileged individuals cannot afford. These advantages compound over time, so that by the point socioeconomic outcomes are observed, inherited advantage is deeply embedded in measurable "merit."
+
+The sociologist Michael Young, who coined the term "meritocracy" in 1958 as a satirical critique rather than an endorsement, warned that a society which genuinely believed success was deserved would be particularly cruel to those at the bottom. If achievement reflects merit, then failure reflects its absence — character, not circumstance. This logic produces not solidarity but contempt for those who struggle.
+
+None of this implies that effort is irrelevant or that mobility is impossible. But it does suggest that public policy matters enormously: early childhood investment, quality universal education, and accessible healthcare can meaningfully increase the degree to which talent and effort actually shape outcomes. Without such structural supports, the meritocratic ideal functions less as a description of social reality than as a justification for existing inequalities.`
+  },
+
+  {
+    id: 20,
+    title: "The Attention Economy: When You Are the Product",
+    topic: "Media",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["algorithm", "engagement", "commodify", "surveillance", "incentive"],
+    body: `In the digital age, attention has become one of the world's most valuable commodities. Social media platforms, streaming services, and news aggregators compete fiercely for a resource that is finite and irreplaceable: the hours of human consciousness. This competition has given rise to what scholars call the "attention economy" — a system in which the primary product bought and sold is not content but the directed engagement of human minds.
+
+The business model of most major digital platforms rests on advertising. The platforms are free to users, but revenue depends on maximizing the time users spend and the precision with which they can be targeted. Every click, scroll, and pause generates data that algorithms use to construct detailed profiles of user preferences, which advertisers then purchase. In a formulation now widely quoted, the user is not the customer — they are the product.
+
+This creates incentives fundamentally misaligned with user wellbeing. Platforms discovered early that content evoking strong emotional reactions — outrage, anxiety, moral indignation — generates more engagement than informative but emotionally neutral material. Algorithms optimized for engagement therefore systematically surface divisive and sensational content. The result is an information environment calibrated not to inform but to provoke, with measurable effects on political polarization and mental health.
+
+The consequences extend beyond individual psychology. An attention economy optimized for engagement has structural effects on public discourse, amplifying extremism and eroding the shared informational baseline that democratic deliberation requires. Traditional news organizations, losing advertising revenue to platforms, have adapted to the same logic — prioritizing the dramatic over the important.
+
+Structural remedies have been proposed: restrictions on behavioral advertising, algorithmic transparency requirements, data portability rules, and antitrust enforcement against platform dominance. Others argue that individual media literacy — understanding how these systems operate and who profits from them — is the more durable solution. Both approaches are probably necessary. The deeper question is whether democratic societies have the political will to regulate industries whose products their citizens are, by design, increasingly dependent upon.`
   }
 ];
