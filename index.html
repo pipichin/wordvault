@@ -16,6 +16,7 @@
 
   <!-- ===== Navbar ===== -->
   <nav class="navbar">
+    <button class="hamburger-btn" id="btnHamburger">☰</button>
     <div class="brand-name">📚 WordVault</div>
     <div class="nav-links">
       <button class="nav-btn active" data-view="home">首頁</button>
@@ -31,6 +32,25 @@
       </div>
     </div>
   </nav>
+
+  <!-- ===== Side Drawer ===== -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="side-drawer" id="sideDrawer">
+    <div class="drawer-header">
+      <div class="brand-name">📚 WordVault</div>
+      <button class="drawer-close" id="btnDrawerClose">✕</button>
+    </div>
+    <nav class="drawer-nav">
+      <button class="drawer-btn active" data-view="home">🏠 首頁</button>
+      <button class="drawer-btn" data-view="study">📖 學習</button>
+      <button class="drawer-btn" data-view="read">📰 閱讀</button>
+      <button class="drawer-btn" data-view="add">➕ 新增單字</button>
+      <button class="drawer-btn" data-view="library">🗂 單字庫</button>
+    </nav>
+    <div class="drawer-footer">
+      <span class="streak-badge">🔥 <span id="streakCountDrawer">0</span> 天</span>
+    </div>
+  </div>
 
   <!-- ===== Main ===== -->
   <main class="main">

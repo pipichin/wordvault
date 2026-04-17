@@ -351,13 +351,24 @@ function showView(name) {
   VIEWS.forEach(v => {
     document.getElementById(v + 'View').classList.toggle('active', v === name);
   });
-  document.querySelectorAll('.nav-btn').forEach(btn => {
+  document.querySelectorAll('.nav-btn, .drawer-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.view === name);
   });
+  closeDrawer();
 
   if (name === 'home')    renderHome();
   if (name === 'library') renderLibrary();
   if (name === 'read')    renderReadHome();
+}
+
+// ===== DRAWER =====
+function openDrawer() {
+  document.getElementById('sideDrawer').classList.add('open');
+  document.getElementById('drawerBackdrop').classList.add('open');
+}
+function closeDrawer() {
+  document.getElementById('sideDrawer').classList.remove('open');
+  document.getElementById('drawerBackdrop').classList.remove('open');
 }
 
 // ===== HOME =====
@@ -372,7 +383,9 @@ function renderHome() {
   document.getElementById('statDue').textContent   = due;
   document.getElementById('statKnown').textContent = known;
   document.getElementById('statToday').textContent = todayCt;
-  document.getElementById('streakCount').textContent = stats.streak || 0;
+  const streak = stats.streak || 0;
+  document.getElementById('streakCount').textContent = streak;
+  document.getElementById('streakCountDrawer').textContent = streak;
 
   // Greeting
   const h = new Date().getHours();
@@ -1137,10 +1150,15 @@ function startStudyWithWord(wordId) {
 
 // ===== EVENT LISTENERS =====
 function initEvents() {
-  // Nav
-  document.querySelectorAll('.nav-btn').forEach(btn => {
+  // Nav (top bar + drawer)
+  document.querySelectorAll('.nav-btn, .drawer-btn').forEach(btn => {
     btn.addEventListener('click', () => showView(btn.dataset.view));
   });
+
+  // Drawer open/close
+  document.getElementById('btnHamburger').addEventListener('click', openDrawer);
+  document.getElementById('btnDrawerClose').addEventListener('click', closeDrawer);
+  document.getElementById('drawerBackdrop').addEventListener('click', closeDrawer);
 
   // Home
   document.getElementById('btnStartStudy').addEventListener('click', () => startStudy('mixed'));
