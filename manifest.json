@@ -4,8 +4,8 @@
   "description": "英文單字學習 — 間隔重複，隨時新增",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#F4F5FF",
-  "theme_color": "#6C63FF",
+  "background_color": "#F0FDF4",
+  "theme_color": "#10B981",
   "orientation": "portrait",
   "icons": [
     {
