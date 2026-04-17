@@ -46,6 +46,9 @@ a { color: var(--purple); }
   display: flex; align-items: center; gap: 20px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.05);
 }
+.nav-right {
+  display: flex; align-items: center; gap: 10px; flex-shrink: 0;
+}
 .brand-name {
   font-size: 1.18rem; font-weight: 800;
   color: var(--purple); letter-spacing: -0.4px;
@@ -585,6 +588,36 @@ textarea { resize: vertical; min-height: 64px; line-height: 1.55; }
 }
 .wp-quick-add input:focus, .wp-quick-add textarea:focus { border-color: var(--purple); }
 .wp-quick-add textarea { resize: none; line-height: 1.5; }
+
+/* ===== Sync UI ===== */
+.sync-area { display: flex; align-items: center; gap: 6px; }
+.sync-login-btn {
+  font-size: 0.78rem; font-weight: 700;
+  padding: 5px 10px; border-radius: 20px;
+  background: var(--purple-light); color: var(--purple);
+  border: 2px solid var(--border); transition: background 0.18s;
+  white-space: nowrap;
+}
+.sync-login-btn:hover { background: var(--border); }
+.sync-avatar {
+  width: 28px; height: 28px; border-radius: 50%;
+  object-fit: cover; border: 2px solid var(--border);
+}
+.sync-avatar-fallback {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: var(--purple); color: #fff;
+  font-size: 0.8rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.sync-dot {
+  font-size: 0.78rem; font-weight: 700; cursor: pointer;
+  width: 22px; height: 22px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--purple-light); color: var(--purple);
+  transition: background 0.2s;
+}
+.sync-dot.ok  { background: #D1FAE5; color: #059669; }
+.sync-dot.err { background: #FEE2E2; color: #EF4444; }
 
 /* ===== Article filter row ===== */
 .article-filter-row {

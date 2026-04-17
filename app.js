@@ -11,6 +11,8 @@ const BOOKMARKS_KEY = 'wordvault_bookmarks';
 const NOTES_KEY     = 'wordvault_notes';
 
 // ===== STATE =====
+let appInitialized     = false; // guards sync during cold boot
+
 let words              = [];   // all words
 let stats              = {};   // streak / today counts
 let readArticles       = new Set(); // ids of articles the user has read
@@ -76,11 +78,158 @@ function freshStats() {
   return { streak: 0, lastStudied: null, todayCount: 0, todayDate: null };
 }
 
-function saveWords()     { localStorage.setItem(DB_KEY,        JSON.stringify(words)); }
+function saveWords() {
+  localStorage.setItem(DB_KEY, JSON.stringify(words));
+  if (appInitialized) scheduleSyncToCloud();
+}
 function saveStats()     { localStorage.setItem(STATS_KEY,     JSON.stringify(stats)); }
 function saveRead()      { localStorage.setItem(READ_KEY,      JSON.stringify([...readArticles])); }
 function saveBookmarks() { localStorage.setItem(BOOKMARKS_KEY, JSON.stringify([...bookmarkedArticles])); }
 function saveNotes()     { localStorage.setItem(NOTES_KEY,     JSON.stringify(articleNotes)); }
+
+// ===== FIREBASE SYNC =====
+const FB_CONFIG = {
+  apiKey:            'AIzaSyAskFfnxMnLkwlT0tzLjJBt3b4o6pgc36Q',
+  authDomain:        'learning-app-16b72.firebaseapp.com',
+  projectId:         'learning-app-16b72',
+  storageBucket:     'learning-app-16b72.firebasestorage.app',
+  messagingSenderId: '1060107746595',
+  appId:             '1:1060107746595:web:8b7e3ec14d18faa92e6096'
+};
+
+let fbAuth = null, fbDb = null, currentUser = null;
+let syncTimer = null;
+
+function initFirebase() {
+  const fbApp = firebase.initializeApp(FB_CONFIG);
+  fbAuth = firebase.auth();
+  fbDb   = firebase.firestore();
+
+  // Handle Google redirect result (iOS PWA uses redirect, not popup)
+  fbAuth.getRedirectResult().catch(() => {});
+
+  fbAuth.onAuthStateChanged(async user => {
+    currentUser = user;
+    renderSyncUI(user);
+    if (user) await syncFromCloud();
+  });
+}
+
+function renderSyncUI(user) {
+  const area = document.getElementById('syncArea');
+  if (!user) {
+    area.innerHTML = `<button class="sync-login-btn" id="btnSignIn">☁️ 同步</button>`;
+    document.getElementById('btnSignIn').addEventListener('click', signIn);
+  } else {
+    const avatar = user.photoURL
+      ? `<img class="sync-avatar" src="${user.photoURL}" title="${user.email}">`
+      : `<span class="sync-avatar-fallback">${(user.email||'?')[0].toUpperCase()}</span>`;
+    area.innerHTML = `
+      ${avatar}
+      <span class="sync-dot" id="syncDot" title="點擊登出">✓</span>
+    `;
+    document.getElementById('syncDot').addEventListener('click', () => {
+      if (confirm('登出雲端同步？\n（單字仍保留在本機）')) fbAuth.signOut();
+    });
+  }
+}
+
+function signIn() {
+  const provider = new firebase.auth.GoogleAuthProvider();
+  // Prefer redirect for iOS PWA compatibility
+  fbAuth.signInWithRedirect(provider).catch(() => {
+    // Fallback to popup on desktop
+    fbAuth.signInWithPopup(provider).catch(console.error);
+  });
+}
+
+function userDoc() {
+  return fbDb.collection('users').doc(currentUser.uid);
+}
+
+async function syncToCloud() {
+  if (!currentUser || !fbDb) return;
+  try {
+    setSyncDot('⟳');
+    await userDoc().set({
+      words:     JSON.parse(JSON.stringify(words)),
+      stats:     JSON.parse(JSON.stringify(stats)),
+      updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+    });
+    setSyncDot('✓');
+  } catch (e) {
+    console.error('Cloud upload failed:', e);
+    setSyncDot('!');
+  }
+}
+
+async function syncFromCloud() {
+  if (!currentUser || !fbDb) return;
+  try {
+    setSyncDot('⟳');
+    const snap = await userDoc().get();
+    if (snap.exists) {
+      const data = snap.data();
+      mergeCloudWords(data.words || []);
+      mergeCloudStats(data.stats || {});
+      renderHome();
+      if (document.getElementById('libraryView').classList.contains('active')) renderLibrary();
+      setSyncDot('✓');
+    } else {
+      // First sign-in on this account — upload everything
+      await syncToCloud();
+    }
+  } catch (e) {
+    console.error('Cloud download failed:', e);
+    setSyncDot('!');
+  }
+}
+
+function mergeCloudWords(cloudWords) {
+  const localMap = new Map(words.map(w => [w.id, w]));
+  let changed = false;
+
+  for (const cw of cloudWords) {
+    if (!localMap.has(cw.id)) {
+      words.push(cw);
+      changed = true;
+    } else {
+      const lw = localMap.get(cw.id);
+      if ((cw.lastReviewed || 0) > (lw.lastReviewed || 0)) {
+        Object.assign(lw, cw);
+        changed = true;
+      }
+    }
+  }
+  if (changed) localStorage.setItem(DB_KEY, JSON.stringify(words)); // save without re-triggering sync
+}
+
+function mergeCloudStats(cs) {
+  if ((cs.streak || 0) > (stats.streak || 0)) stats.streak = cs.streak;
+  if (cs.todayDate === todayStr() && (cs.todayCount || 0) > (stats.todayCount || 0)) {
+    stats.todayCount = cs.todayCount;
+    stats.todayDate  = cs.todayDate;
+  }
+  if (!stats.lastStudied || (cs.lastStudied && cs.lastStudied > stats.lastStudied)) {
+    stats.lastStudied = cs.lastStudied;
+  }
+  saveStats();
+}
+
+function scheduleSyncToCloud() {
+  if (!currentUser) return;
+  clearTimeout(syncTimer);
+  setSyncDot('…');
+  syncTimer = setTimeout(syncToCloud, 2000);
+}
+
+function setSyncDot(s) {
+  const el = document.getElementById('syncDot');
+  if (el) {
+    el.textContent = s;
+    el.className = 'sync-dot' + (s === '✓' ? ' ok' : s === '!' ? ' err' : '');
+  }
+}
 
 function todayStr() { return new Date().toISOString().slice(0, 10); }
 
@@ -1085,6 +1234,8 @@ function init() {
   loadData();
   initEvents();
   renderHome();
+  appInitialized = true;
+  initFirebase();
 }
 
 document.addEventListener('DOMContentLoaded', init);
