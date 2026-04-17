@@ -168,6 +168,7 @@
           <button class="btn-ghost" id="btnBackFromArticle">← 返回</button>
           <div class="article-topic-chip" id="detailTopic"></div>
           <button class="bookmark-btn" id="btnBookmark" title="收藏文章">☆</button>
+          <button class="add-phrase-btn" id="btnAddPhrase" title="新增單字／片語">＋</button>
         </div>
         <h2 class="article-title" id="detailTitle"></h2>
         <div class="article-meta-row">
@@ -204,6 +205,7 @@
     <div class="word-popup" id="wordPopup" style="display:none">
       <div class="wp-header">
         <div class="wp-word" id="wpWord"></div>
+        <input type="text" class="wp-word-input" id="wpWordInput" placeholder="輸入單字或片語…" autocomplete="off" style="display:none">
         <button class="wp-close" id="wpClose">✕</button>
       </div>
       <div class="wp-body" id="wpBody"></div>

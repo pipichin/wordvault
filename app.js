@@ -841,6 +841,98 @@ function showToast(msg) {
 function closeWordPopup() {
   document.getElementById('popupBackdrop').style.display = 'none';
   document.getElementById('wordPopup').style.display     = 'none';
+  // Restore tap-mode defaults
+  document.getElementById('wpWord').style.display      = '';
+  document.getElementById('wpWordInput').style.display  = 'none';
+  document.getElementById('wpWordInput').value          = '';
+  clearTimeout(manualLookupTimer);
+}
+
+// ===== MANUAL ADD POPUP =====
+let manualLookupTimer = null;
+
+function showManualAddPopup() {
+  // Switch header to input mode
+  document.getElementById('wpWord').style.display     = 'none';
+  document.getElementById('wpWordInput').style.display = '';
+  document.getElementById('wpWordInput').value         = '';
+
+  document.getElementById('wpBody').innerHTML =
+    '<div class="map-hint">輸入單字會自動查字典；輸入片語請直接填意思</div>';
+
+  document.getElementById('popupBackdrop').style.display = '';
+  document.getElementById('wordPopup').style.display     = '';
+
+  setTimeout(() => document.getElementById('wpWordInput').focus(), 120);
+}
+
+function handleManualInput() {
+  clearTimeout(manualLookupTimer);
+  const val  = this.value.trim();
+  const body = document.getElementById('wpBody');
+
+  if (!val) {
+    body.innerHTML = '<div class="map-hint">輸入單字會自動查字典；輸入片語請直接填意思</div>';
+    return;
+  }
+
+  // Check duplicate
+  if (words.some(w => w.word.toLowerCase() === val.toLowerCase())) {
+    body.innerHTML = `<div class="map-dup">⚠️「${val}」已在單字庫中</div>`;
+    return;
+  }
+
+  const isPhrase = val.includes(' ');
+  if (isPhrase) {
+    renderManualAddForm(val, { phonetic: '', pos: 'phrase', def: '', example: '', zh: '' });
+    return;
+  }
+
+  body.innerHTML = '<div class="wp-fetching">⟳ 查詢字典中…</div>';
+  manualLookupTimer = setTimeout(async () => {
+    const info = await fetchWordInfoForPopup(val);
+    renderManualAddForm(val, info);
+  }, 600);
+}
+
+function renderManualAddForm(word, info) {
+  const body = document.getElementById('wpBody');
+  body.innerHTML = `
+    ${info.phonetic ? `<div class="wp-phonetic">${info.phonetic}</div>` : ''}
+    ${info.pos      ? `<div class="wp-pos">${info.pos}</div>`           : ''}
+    ${info.def      ? `<div class="wp-en-def">${info.def}</div>`        : ''}
+    <div class="wp-quick-add">
+      <div class="wp-field-label">中文意思 <span style="color:var(--red)">*</span></div>
+      <input type="text" id="mapDefInput" placeholder="中文意思或英文定義" value="${(info.zh || '').replace(/"/g, '&quot;')}">
+      <div class="wp-field-label">例句（可略）</div>
+      <textarea id="mapExInput" rows="2" placeholder="英文例句">${info.example || ''}</textarea>
+      <button class="btn-primary" id="mapAddBtn">加入 WordVault ✓</button>
+    </div>
+  `;
+
+  document.getElementById('mapAddBtn').addEventListener('click', () => {
+    const def     = document.getElementById('mapDefInput').value.trim();
+    const example = document.getElementById('mapExInput').value.trim();
+    if (!def) { document.getElementById('mapDefInput').focus(); return; }
+
+    const isPhrase = word.includes(' ');
+    const newWord = makeWord({
+      id:         'u_' + Date.now(),
+      word:       word,
+      phonetic:   info.phonetic || '',
+      pos:        info.pos      || (isPhrase ? 'phrase' : ''),
+      definition: def,
+      example:    example,
+      difficulty: 'hard',
+      tags:       ['from-article']
+    }, true);
+
+    words.push(newWord);
+    saveWords();
+    closeWordPopup();
+    refreshArticleBody();
+    showToast(`✅ "${word}" 已加入！`);
+  });
 }
 
 // ===== BOOKMARKS =====
@@ -947,6 +1039,8 @@ function initEvents() {
   document.getElementById('btnBookmark').addEventListener('click', () => {
     if (currentArticleId !== null) toggleBookmark(currentArticleId);
   });
+  document.getElementById('btnAddPhrase').addEventListener('click', showManualAddPopup);
+  document.getElementById('wpWordInput').addEventListener('input', handleManualInput);
   document.getElementById('btnSaveNote').addEventListener('click', () => {
     if (currentArticleId !== null) saveNote(currentArticleId);
   });
