@@ -153,6 +153,12 @@
         <div id="todayArticleCard" class="today-article-card"></div>
 
         <div class="section-label" style="margin-top:32px">📚 全部文章</div>
+        <div class="article-filter-row" id="articleFilterRow">
+          <button class="art-filter-btn active" data-filter="all">全部</button>
+          <button class="art-filter-btn" data-filter="unread">未讀</button>
+          <button class="art-filter-btn" data-filter="read">已讀</button>
+          <button class="art-filter-btn" data-filter="bookmarked">⭐ 收藏</button>
+        </div>
         <div id="articleList" class="article-list"></div>
       </div>
 
@@ -161,6 +167,7 @@
         <div class="article-nav-row">
           <button class="btn-ghost" id="btnBackFromArticle">← 返回</button>
           <div class="article-topic-chip" id="detailTopic"></div>
+          <button class="bookmark-btn" id="btnBookmark" title="收藏文章">☆</button>
         </div>
         <h2 class="article-title" id="detailTitle"></h2>
         <div class="article-meta-row">
@@ -174,6 +181,20 @@
         <div class="article-keywords-section">
           <div class="section-label">🔑 本文關鍵詞彙</div>
           <div class="article-keywords" id="detailKeywords"></div>
+        </div>
+
+        <div class="article-source-section" id="articleSourceSection" style="display:none">
+          <div class="section-label">🔗 文章來源</div>
+          <a class="article-source-url" id="articleSourceUrl" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+
+        <div class="article-notes-section">
+          <div class="section-label">📝 我的筆記</div>
+          <textarea id="articleNoteInput" class="article-note-input" placeholder="在這裡寫下閱讀筆記、重要觀點，或對單字的想法…" rows="4"></textarea>
+          <div class="article-note-footer">
+            <button class="btn-primary btn-sm" id="btnSaveNote">儲存筆記</button>
+            <span class="note-saved-hint" id="noteSavedHint" style="display:none">✓ 已儲存</span>
+          </div>
         </div>
       </div>
     </div>

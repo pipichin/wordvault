@@ -4,22 +4,27 @@
 ================================================================ */
 
 // ===== STORAGE KEYS =====
-const DB_KEY      = 'wordvault_words';
-const STATS_KEY   = 'wordvault_stats';
-const READ_KEY    = 'wordvault_read_articles';
+const DB_KEY        = 'wordvault_words';
+const STATS_KEY     = 'wordvault_stats';
+const READ_KEY      = 'wordvault_read_articles';
+const BOOKMARKS_KEY = 'wordvault_bookmarks';
+const NOTES_KEY     = 'wordvault_notes';
 
 // ===== STATE =====
-let words        = [];   // all words
-let stats        = {};   // streak / today counts
-let readArticles = new Set(); // ids of articles the user has read
-let studyQueue   = [];   // current session
-let currentIdx   = 0;
-let isFlipped    = false;
-let sessionGood  = 0;    // words rated "good" or "easy" this session
-let editingId    = null; // word id being edited
-let libFilter    = 'all';
-let libSearch    = '';
-let currentArticleId = null;
+let words              = [];   // all words
+let stats              = {};   // streak / today counts
+let readArticles       = new Set(); // ids of articles the user has read
+let bookmarkedArticles = new Set(); // ids of bookmarked articles
+let articleNotes       = {};        // { [articleId]: noteText }
+let studyQueue         = [];   // current session
+let currentIdx         = 0;
+let isFlipped          = false;
+let sessionGood        = 0;    // words rated "good" or "easy" this session
+let editingId          = null; // word id being edited
+let libFilter          = 'all';
+let libSearch          = '';
+let currentArticleId   = null;
+let articleListFilter  = 'all';
 
 // ===== STORAGE =====
 function loadData() {
@@ -43,6 +48,12 @@ function loadData() {
   const rawRead = localStorage.getItem(READ_KEY);
   readArticles = rawRead ? new Set(JSON.parse(rawRead)) : new Set();
 
+  const rawBookmarks = localStorage.getItem(BOOKMARKS_KEY);
+  bookmarkedArticles = rawBookmarks ? new Set(JSON.parse(rawBookmarks)) : new Set();
+
+  const rawNotes = localStorage.getItem(NOTES_KEY);
+  articleNotes = rawNotes ? JSON.parse(rawNotes) : {};
+
   updateStreak();
   saveWords();
   saveStats();
@@ -65,9 +76,11 @@ function freshStats() {
   return { streak: 0, lastStudied: null, todayCount: 0, todayDate: null };
 }
 
-function saveWords()   { localStorage.setItem(DB_KEY,    JSON.stringify(words)); }
-function saveStats()   { localStorage.setItem(STATS_KEY, JSON.stringify(stats)); }
-function saveRead()    { localStorage.setItem(READ_KEY,  JSON.stringify([...readArticles])); }
+function saveWords()     { localStorage.setItem(DB_KEY,        JSON.stringify(words)); }
+function saveStats()     { localStorage.setItem(STATS_KEY,     JSON.stringify(stats)); }
+function saveRead()      { localStorage.setItem(READ_KEY,      JSON.stringify([...readArticles])); }
+function saveBookmarks() { localStorage.setItem(BOOKMARKS_KEY, JSON.stringify([...bookmarkedArticles])); }
+function saveNotes()     { localStorage.setItem(NOTES_KEY,     JSON.stringify(articleNotes)); }
 
 function todayStr() { return new Date().toISOString().slice(0, 10); }
 
@@ -586,23 +599,39 @@ function renderReadHome() {
   `;
   document.getElementById('todayArticleCard').onclick = () => openArticle(ta.id);
 
-  // Full list
+  // Sync filter button active state
+  document.querySelectorAll('.art-filter-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.filter === articleListFilter);
+  });
+
+  // Full list (filtered)
+  let filtered = ARTICLES;
+  if (articleListFilter === 'unread')    filtered = ARTICLES.filter(a => !readArticles.has(a.id));
+  if (articleListFilter === 'read')      filtered = ARTICLES.filter(a =>  readArticles.has(a.id));
+  if (articleListFilter === 'bookmarked') filtered = ARTICLES.filter(a => bookmarkedArticles.has(a.id));
+
   const list = document.getElementById('articleList');
-  list.innerHTML = ARTICLES.map(a => {
-    const isR = readArticles.has(a.id);
-    const isToday = a.id === ta.id;
-    return `
-      <div class="article-item ${isR ? 'is-read' : ''}" data-id="${a.id}">
-        <div class="article-item-left">
-          <div class="article-item-title">${isToday ? '📖 ' : ''}${a.title}</div>
-          <div class="article-item-meta">${a.topic} · ${diffLabel(a.difficulty)} · ${a.readingTime} 分鐘</div>
+  if (filtered.length === 0) {
+    list.innerHTML = '<p style="color:var(--text-2);padding:24px 0;text-align:center;">沒有符合的文章</p>';
+  } else {
+    list.innerHTML = filtered.map(a => {
+      const isR = readArticles.has(a.id);
+      const isBk = bookmarkedArticles.has(a.id);
+      const isToday = a.id === ta.id;
+      return `
+        <div class="article-item ${isR ? 'is-read' : ''}" data-id="${a.id}">
+          <div class="article-item-left">
+            <div class="article-item-title">${isToday ? '📖 ' : ''}${a.title}</div>
+            <div class="article-item-meta">${a.topic} · ${diffLabel(a.difficulty)} · ${a.readingTime} 分鐘</div>
+          </div>
+          <div class="article-item-right">
+            ${isBk ? '<span class="bk-star">⭐</span>' : ''}
+            <span class="read-check">${isR ? '✅' : ''}</span>
+          </div>
         </div>
-        <div class="article-item-right">
-          <span class="read-check">${isR ? '✅' : ''}</span>
-        </div>
-      </div>
-    `;
-  }).join('');
+      `;
+    }).join('');
+  }
 
   list.querySelectorAll('.article-item').forEach(el => {
     el.addEventListener('click', () => openArticle(parseInt(el.dataset.id)));
@@ -625,6 +654,24 @@ function openArticle(id) {
   document.getElementById('detailTitle').innerHTML = renderArticleBody(a.title).replace(/<\/?p>/g, '');
   document.getElementById('detailDiff').textContent     = diffLabel(a.difficulty);
   document.getElementById('detailTime').textContent     = `⏱ ${a.readingTime} 分鐘`;
+
+  // Bookmark button
+  updateBookmarkButton(id);
+
+  // Source URL
+  const srcSection = document.getElementById('articleSourceSection');
+  const srcLink    = document.getElementById('articleSourceUrl');
+  if (a.sourceUrl) {
+    srcLink.href        = a.sourceUrl;
+    srcLink.textContent = a.sourceUrl;
+    srcSection.style.display = '';
+  } else {
+    srcSection.style.display = 'none';
+  }
+
+  // Notes
+  document.getElementById('articleNoteInput').value = articleNotes[id] || '';
+  document.getElementById('noteSavedHint').style.display = 'none';
 
   // Render body with tappable words
   document.getElementById('detailBody').innerHTML = renderArticleBody(a.body);
@@ -796,6 +843,39 @@ function closeWordPopup() {
   document.getElementById('wordPopup').style.display     = 'none';
 }
 
+// ===== BOOKMARKS =====
+function toggleBookmark(id) {
+  if (bookmarkedArticles.has(id)) {
+    bookmarkedArticles.delete(id);
+  } else {
+    bookmarkedArticles.add(id);
+  }
+  saveBookmarks();
+  updateBookmarkButton(id);
+}
+
+function updateBookmarkButton(id) {
+  const btn = document.getElementById('btnBookmark');
+  if (!btn) return;
+  const on = bookmarkedArticles.has(id);
+  btn.textContent = on ? '★' : '☆';
+  btn.classList.toggle('bookmarked', on);
+}
+
+// ===== NOTES =====
+function saveNote(id) {
+  const text = document.getElementById('articleNoteInput').value.trim();
+  if (text) {
+    articleNotes[id] = text;
+  } else {
+    delete articleNotes[id];
+  }
+  saveNotes();
+  const hint = document.getElementById('noteSavedHint');
+  hint.style.display = '';
+  setTimeout(() => { hint.style.display = 'none'; }, 2000);
+}
+
 // Start a study session with one specific word first
 function startStudyWithWord(wordId) {
   const w = words.find(x => x.id === wordId);
@@ -863,6 +943,18 @@ function initEvents() {
   document.getElementById('btnBackFromArticle').addEventListener('click', () => {
     renderReadHome();
     window.scrollTo(0, 0);
+  });
+  document.getElementById('btnBookmark').addEventListener('click', () => {
+    if (currentArticleId !== null) toggleBookmark(currentArticleId);
+  });
+  document.getElementById('btnSaveNote').addEventListener('click', () => {
+    if (currentArticleId !== null) saveNote(currentArticleId);
+  });
+  document.querySelectorAll('.art-filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      articleListFilter = this.dataset.filter;
+      renderReadHome();
+    });
   });
   document.getElementById('wpClose').addEventListener('click', closeWordPopup);
   document.getElementById('popupBackdrop').addEventListener('click', closeWordPopup);
