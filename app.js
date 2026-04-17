@@ -136,10 +136,13 @@ function renderSyncUI(user) {
 
 function signIn() {
   const provider = new firebase.auth.GoogleAuthProvider();
-  // Prefer redirect for iOS PWA compatibility
-  fbAuth.signInWithRedirect(provider).catch(() => {
-    // Fallback to popup on desktop
-    fbAuth.signInWithPopup(provider).catch(console.error);
+  fbAuth.signInWithPopup(provider).catch(err => {
+    // Popup blocked (e.g. iOS standalone PWA) — fall back to redirect
+    if (err.code === 'auth/popup-blocked' || err.code === 'auth/operation-not-supported-in-this-environment') {
+      fbAuth.signInWithRedirect(provider).catch(console.error);
+    } else {
+      console.error('Sign-in error:', err);
+    }
   });
 }
 
