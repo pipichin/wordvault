@@ -889,7 +889,7 @@ function showWordPopup(word, _el) {
       ${found.example  ? `<div class="wp-example">"${found.example}"</div>` : ''}
       <div class="wp-actions">
         <button class="btn-primary" id="wpStudyNow">加入今日學習</button>
-        <a class="btn-cambridge" href="https://dictionary.cambridge.org/dictionary/english/${encodeURIComponent(word)}" target="_blank" rel="noopener">劍橋字典 ↗</a>
+        <a class="btn-cambridge" href="https://dictionary.cambridge.org/dictionary/english-chinese-traditional/${encodeURIComponent(word)}" target="_blank" rel="noopener">劍橋字典 ↗</a>
       </div>
     `;
     document.getElementById('wpStudyNow').addEventListener('click', () => {
@@ -912,7 +912,7 @@ function showWordPopup(word, _el) {
           <textarea id="wpExInput" rows="2" placeholder="英文例句">${info.example || ''}</textarea>
           <div class="wp-cambridge-row">
             <button class="btn-primary" id="wpQuickAdd">加入 WordVault ✓</button>
-            <a class="btn-cambridge" href="https://dictionary.cambridge.org/dictionary/english/${encodeURIComponent(word)}" target="_blank" rel="noopener">劍橋字典 ↗</a>
+            <a class="btn-cambridge" href="https://dictionary.cambridge.org/dictionary/english-chinese-traditional/${encodeURIComponent(word)}" target="_blank" rel="noopener">劍橋字典 ↗</a>
           </div>
         </div>
       `;
