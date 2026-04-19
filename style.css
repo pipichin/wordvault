@@ -615,7 +615,16 @@ textarea { resize: vertical; min-height: 64px; line-height: 1.55; }
 .wp-example { font-size: 0.88rem; color: var(--text-2); font-style: italic;
   line-height: 1.55; margin-bottom: 16px; padding-left: 12px;
   border-left: 3px solid var(--purple-light); }
-.wp-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.wp-actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.wp-cambridge-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-top: 4px; }
+.btn-cambridge {
+  font-size: 0.85rem; font-weight: 600;
+  padding: 8px 16px; border-radius: 22px;
+  border: 2px solid var(--border); color: var(--text-2);
+  text-decoration: none; transition: all 0.18s;
+  white-space: nowrap;
+}
+.btn-cambridge:hover { border-color: var(--purple); color: var(--purple); }
 .wp-fetching { color: var(--text-2); font-size: 0.9rem;
   animation: pulse 1s ease-in-out infinite; }
 @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }

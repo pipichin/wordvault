@@ -101,7 +101,7 @@ let fbAuth = null, fbDb = null, currentUser = null;
 let syncTimer = null;
 
 function initFirebase() {
-  const fbApp = firebase.initializeApp(FB_CONFIG);
+  firebase.initializeApp(FB_CONFIG);
   fbAuth = firebase.auth();
   fbDb   = firebase.firestore();
 
@@ -889,6 +889,7 @@ function showWordPopup(word, _el) {
       ${found.example  ? `<div class="wp-example">"${found.example}"</div>` : ''}
       <div class="wp-actions">
         <button class="btn-primary" id="wpStudyNow">加入今日學習</button>
+        <a class="btn-cambridge" href="https://dictionary.cambridge.org/dictionary/english/${encodeURIComponent(word)}" target="_blank" rel="noopener">劍橋字典 ↗</a>
       </div>
     `;
     document.getElementById('wpStudyNow').addEventListener('click', () => {
@@ -909,7 +910,10 @@ function showWordPopup(word, _el) {
           <input type="text" id="wpDefInput" placeholder="中文意思" value="${(info.zh || '').replace(/"/g, '&quot;')}">
           <div class="wp-field-label">例句（可修改）</div>
           <textarea id="wpExInput" rows="2" placeholder="英文例句">${info.example || ''}</textarea>
-          <button class="btn-primary" id="wpQuickAdd">加入 WordVault ✓</button>
+          <div class="wp-cambridge-row">
+            <button class="btn-primary" id="wpQuickAdd">加入 WordVault ✓</button>
+            <a class="btn-cambridge" href="https://dictionary.cambridge.org/dictionary/english/${encodeURIComponent(word)}" target="_blank" rel="noopener">劍橋字典 ↗</a>
+          </div>
         </div>
       `;
 
