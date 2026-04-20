@@ -365,5 +365,103 @@ This creates incentives fundamentally misaligned with user wellbeing. Platforms 
 The consequences extend beyond individual psychology. An attention economy optimized for engagement has structural effects on public discourse, amplifying extremism and eroding the shared informational baseline that democratic deliberation requires. Traditional news organizations, losing advertising revenue to platforms, have adapted to the same logic — prioritizing the dramatic over the important.
 
 Structural remedies have been proposed: restrictions on behavioral advertising, algorithmic transparency requirements, data portability rules, and antitrust enforcement against platform dominance. Others argue that individual media literacy — understanding how these systems operate and who profits from them — is the more durable solution. Both approaches are probably necessary. The deeper question is whether democratic societies have the political will to regulate industries whose products their citizens are, by design, increasingly dependent upon.`
+  },
+
+  {
+    id: 21,
+    title: "Cultural Relativism: Understanding Without Judging",
+    topic: "Anthropology",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["relativism", "ethnocentrism", "indigenous", "assimilation", "norm"],
+    body: `When early European explorers encountered unfamiliar societies, they often concluded that these peoples were primitive or uncivilized. This reaction — judging other cultures by the standards of one's own — is what anthropologists call ethnocentrism. For centuries it remained the dominant lens through which Western observers viewed the rest of the world, shaping colonial policies with lasting consequences.
+
+Cultural relativism emerged as a corrective. Developed by anthropologist Franz Boas and his student Margaret Mead, the principle holds that cultural practices must be understood within their own context rather than measured against an external standard. A mourning ritual that appears unsettling to an outsider may represent profound solidarity and communal respect within its own tradition.
+
+The practical value of this approach is considerable. By suspending judgment, researchers can document human diversity with far greater accuracy. Indigenous knowledge systems — in agriculture, medicine, and ecology — have been shown to contain insights that Western science is only beginning to appreciate. Dismissing such practices as superstition prematurely closes doors to genuine understanding.
+
+However, cultural relativism has its critics. If all norms are equally valid within their own context, on what basis can we oppose practices that cause serious harm — forced marriage, caste discrimination, or torture? Philosopher Martha Nussbaum argued that a "capabilities approach" — focused on what all humans require to live with dignity — provides a universal foundation that respects diversity without endorsing cruelty.
+
+The tension between relativism and universal human rights remains productively unresolved. A strict relativist cannot condemn historical atrocities without contradiction; a rigid universalist risks imposing one culture's norms on others — a form of intellectual imperialism. Most contemporary anthropologists occupy a middle ground: engaging seriously with cultures on their own terms while retaining the capacity for moral critique when fundamental human dignity is at stake.
+
+What cultural relativism ultimately teaches is humility — an awareness that our own assumptions are cultural artifacts rather than eternal truths, and that genuine understanding demands the willingness to see the world through unfamiliar eyes.`
+  },
+
+  {
+    id: 22,
+    title: "Multilateralism Under Pressure: Can Nations Still Cooperate?",
+    topic: "International Relations",
+    difficulty: "hard",
+    readingTime: 4,
+    keyWords: ["multilateralism", "sovereignty", "sanction", "diplomacy", "hegemony"],
+    body: `The twentieth century's most destructive conflicts gave rise to an ambitious experiment: building a rules-based international order in which nations would resolve disputes through negotiation and shared institutions rather than war. The United Nations, the World Trade Organization, and the International Criminal Court all emerged from this vision. Yet today, that order faces mounting pressure from multiple directions.
+
+Multilateralism — the practice of coordinating policy among three or more countries through binding agreements and shared institutions — rests on a difficult trade-off. Member states must accept constraints on their sovereignty in exchange for the collective benefits of cooperation. For smaller nations this bargain is often attractive; for major powers it can feel like an unwelcome restraint on freedom of action.
+
+Recent decades have exposed the limitations of international institutions. The UN Security Council is frequently paralysed by vetoes from permanent members pursuing narrow national interests. Climate negotiations have produced agreements whose ambitions far exceed their enforcement mechanisms. Trade organizations struggle to arbitrate disputes between economies that operate by fundamentally different rules.
+
+Critics argue that multilateralism was always a reflection of American hegemony — a system designed to embed US values and interests in international norms. As that dominance recedes, the institutions built around it may lose coherence. Proponents counter that the alternative — a world of unchecked bilateral power competition — produced two world wars within a single generation.
+
+The case for multilateralism is ultimately pragmatic. Many of the defining challenges of our era — pandemic preparedness, climate change, nuclear non-proliferation, and cross-border financial regulation — cannot be managed by any single state. Effective responses require coordination, which requires institutions, which requires member states to accept limits on unilateral action.
+
+Whether today's institutions can adapt to a more contested geopolitical environment is one of the century's defining questions. Their survival may depend less on idealism than on whether enough powerful states judge sustained cooperation to be in their long-term interest.`
+  },
+
+  {
+    id: 23,
+    title: "Two Ways to Be Good: Utilitarianism and Deontological Ethics",
+    topic: "Ethics",
+    difficulty: "hard",
+    readingTime: 4,
+    keyWords: ["utilitarian", "deontology", "consequentialism", "obligation", "virtue"],
+    body: `Moral philosophy has long been divided between two broad approaches to ethical decision-making. The first, associated with Jeremy Bentham and John Stuart Mill, is utilitarianism: an action is right if it produces the greatest happiness for the greatest number of people. The second, most powerfully articulated by Immanuel Kant, holds that certain actions are intrinsically right or wrong regardless of their consequences.
+
+Utilitarianism has considerable practical appeal. It provides a clear decision procedure — calculate which option produces the most overall well-being and choose it. Public health officials, economists designing welfare programs, and governments weighing competing policy priorities all implicitly employ utilitarian reasoning. Its democratic spirit is also attractive: every person's happiness counts equally in the calculation, with no one's interests privileged above another's.
+
+But the approach has troubling implications. Classical utilitarianism can seemingly justify punishing an innocent person if doing so prevents greater harm to society. It can endorse the oppression of a minority if the gains to the majority are sufficiently large. These conclusions strike most people as morally monstrous, which suggests the theory is missing something essential about the nature of individual rights.
+
+Deontological ethics — from the Greek deon, meaning duty — insists that morality is not about outcomes but about the inherent nature of the action itself. Kant's categorical imperative holds that you should act only according to principles you could consistently will to become universal laws. Lying, exploitation, and murder are wrong not because they produce bad results, but because they violate the inherent dignity that every person possesses.
+
+The deontological framework faces its own challenges, however. What should you do when two duties conflict? Can an ethical system that ignores consequences really guide action in a complex world where every choice has rippling effects?
+
+Most thoughtful ethicists today draw on both traditions. Consequentialist reasoning helps evaluate policies and trade-offs at scale; deontological constraints prevent us from treating individuals as mere instruments of collective ends. The richest moral thinking holds these frameworks in productive tension rather than selecting one as absolute.`
+  },
+
+  {
+    id: 24,
+    title: "The Purpose of Education: Forming Workers or Citizens?",
+    topic: "Education",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["curriculum", "pedagogy", "literacy", "civic", "vocation"],
+    body: `Few questions are as enduring as this one: what is education for? The answer shapes everything from curriculum design to national budget priorities, and different societies have given very different answers throughout history.
+
+One influential tradition, associated with the philosopher John Dewey, holds that education's primary purpose is to form active, thoughtful citizens capable of participating in democratic life. On this view, schools are not merely places to acquire marketable skills; they are miniature societies in which young people learn to think critically, engage with diverse perspectives, and develop habits of civic responsibility. A population schooled only in technical competence, Dewey warned, is ill-equipped to govern itself.
+
+A contrasting emphasis focuses on economic productivity. In this view, education's primary function is to equip students with skills demanded by the labor market. Proponents argue that vocational competence and economic mobility are themselves forms of human flourishing, and that practical training serves students — particularly those from disadvantaged backgrounds — better than abstract liberal arts education that may not translate into employment.
+
+In much of East Asia, a third tradition has been influential: education as a pathway to social mobility through competitive examination. Systems modeled on this approach often produce high academic performance but have been criticized for generating excessive pressure, narrowing curricula, and privileging rote memorization over creative and independent thinking.
+
+These tensions have intensified in the digital age. If factual information is freely available online, what role remains for formal instruction? Advocates of twenty-first-century pedagogy argue that schools should prioritize collaboration, critical thinking, and adaptability over the transmission of fixed knowledge. Critics worry this vision undervalues the foundational literacy and numeracy that make deeper understanding possible.
+
+Perhaps the most honest answer is that education must serve multiple purposes simultaneously — personal development, civic formation, economic preparation, and cultural transmission. The enduring challenge is holding these aims in productive balance rather than allowing any single one to crowd out the rest.`
+  },
+
+  {
+    id: 25,
+    title: "When Machines Judge People: The Ethics of Algorithmic Decisions",
+    topic: "Technology & Society",
+    difficulty: "hard",
+    readingTime: 4,
+    keyWords: ["bias", "accountability", "transparency", "automation", "discrimination"],
+    body: `Across the world, decisions that shape people's lives — who receives a loan, who qualifies for parole, which job candidates advance to interview — are increasingly being made not by human officials but by automated systems. This shift raises profound questions about fairness, accountability, and the nature of justice in a data-driven age.
+
+Proponents of algorithmic decision-making argue that computers are more consistent and less susceptible to the emotional biases that cloud human judgment. A hiring algorithm does not have a bad day; a credit-scoring model does not favor applicants who remind it of someone it likes. By processing vast datasets, these systems can identify patterns too complex for any individual analyst to detect, potentially making consequential decisions more objective and efficient.
+
+But critics identify a fundamental problem: algorithms learn from historical data, and history is not neutral. If past lending decisions discriminated against minority communities, a model trained on that data will reproduce and potentially amplify those disparities — not out of malice, but out of fidelity to a biased past. Researchers have documented cases in which facial recognition systems misidentify darker-skinned individuals at significantly higher rates, and in which criminal risk assessment tools assign higher scores to defendants from certain demographic groups, independent of their actual behavior.
+
+The accountability gap is equally troubling. When a human official makes an unjust decision, established mechanisms exist for appeal and redress. When an algorithm produces an adverse outcome, it is often unclear who bears responsibility — the developer, the deploying organization, or the model itself? Many systems are proprietary, making meaningful external scrutiny impossible and leaving affected individuals with little recourse.
+
+Regulation has begun to catch up. The European Union's AI Act requires transparency and human oversight for high-risk applications. But technology rarely waits for governance to arrive. The central challenge is not whether to use these powerful tools, but how to ensure that the systems judging people reflect our values — rather than simply inheriting the inequalities of our history.`
   }
 ];
