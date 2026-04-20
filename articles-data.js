@@ -463,5 +463,66 @@ But critics identify a fundamental problem: algorithms learn from historical dat
 The accountability gap is equally troubling. When a human official makes an unjust decision, established mechanisms exist for appeal and redress. When an algorithm produces an adverse outcome, it is often unclear who bears responsibility — the developer, the deploying organization, or the model itself? Many systems are proprietary, making meaningful external scrutiny impossible and leaving affected individuals with little recourse.
 
 Regulation has begun to catch up. The European Union's AI Act requires transparency and human oversight for high-risk applications. But technology rarely waits for governance to arrive. The central challenge is not whether to use these powerful tools, but how to ensure that the systems judging people reflect our values — rather than simply inheriting the inequalities of our history.`
+  },
+
+  {
+    id: 26,
+    title: "Propaganda and the Manufacturing of Consent",
+    topic: "Media",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["propaganda", "manipulation", "consensus", "credibility", "narrative"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Propaganda",
+    body: `Propaganda is as old as organized power. Whenever rulers, religious institutions, or political movements have sought to shape public belief on a large scale, they have turned to systematic communication designed not to inform but to persuade. The word itself comes from a seventeenth-century Catholic organization charged with "propagating" the faith — a neutral origin that has since acquired a strongly negative meaning.
+
+The modern era of propaganda was partly shaped by Edward Bernays, a nephew of Sigmund Freud who applied psychoanalytic insights to public relations and political messaging. During World War One, governments discovered the power of organized communication to mobilize entire populations. Bernays later argued that the deliberate management of public opinion was not only inevitable in a democracy but necessary — that trained specialists would guide the beliefs of an otherwise irrational public.
+
+Propaganda works through a recognizable set of techniques. Emotional appeals — to fear, pride, or group loyalty — are far more effective than rational argument in shaping mass opinion. Repetition makes claims feel familiar, and familiarity is easily mistaken for truth. Scapegoating directs social frustration toward identifiable enemies. Creating the impression of false consensus — that "everyone" holds a particular view — triggers powerful conformity pressure in audiences.
+
+The concept of "manufactured consent," developed by journalist Walter Lippmann and later extended by Noam Chomsky and Edward Herman, argues that even in democratic societies, powerful economic and political interests shape the range of acceptable public opinion through their influence over media institutions. Outright censorship is often unnecessary: the agenda is set more subtly, through which stories receive prominent coverage and which are quietly omitted.
+
+Digital technology has given propaganda new reach and precision. The same platforms that allow citizens to bypass traditional gatekeepers also enable state and commercial actors to target audiences with algorithms that exploit psychological vulnerabilities at scale. Identifying propaganda in the digital age requires asking not just "is this true?" but "who produced this, for what purpose, and who benefits from my believing it?" Developing that habit of critical inquiry is one of the most important skills a citizen can cultivate.`
+  },
+
+  {
+    id: 27,
+    title: "The Sociology of Cities: Urban Life and Inequality",
+    topic: "Sociology",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["gentrification", "segregation", "urbanization", "displacement", "density"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Urban_sociology",
+    body: `For the first time in human history, more than half of the world's population now lives in cities. This transformation, accelerated by industrialization and still ongoing across the Global South, is one of the most profound shifts in how human beings organize their lives. Cities are engines of economic growth and centers of cultural innovation — but they are also among the most unequal environments that modern societies have produced.
+
+The German sociologist Georg Simmel, writing at the turn of the twentieth century, observed that city life creates a distinctive personality type. Surrounded by constant stimulation and millions of strangers, urban dwellers develop a protective reserve — an apparent indifference to those around them. This attitude, which Simmel called the "blasé outlook," is not callousness but psychological self-defense against sensory overload. The anonymity of the city frees individuals from the close social monitoring of village life — but it also risks breeding isolation.
+
+More structurally significant is the geography of urban inequality. Cities typically concentrate wealth and poverty in close proximity while keeping them institutionally separate. Residential segregation — the spatial sorting of populations by class, race, or ethnicity — means that a child's life chances are powerfully shaped by the neighborhood they grow up in. Neighborhood determines school quality, safety, and access to employment. In many cities, zip code is among the strongest predictors of health outcomes and life expectancy.
+
+Gentrification illustrates the tensions at the heart of urban development. When higher-income residents move into previously low-income neighborhoods, property values rise and physical conditions may improve — but long-established communities are displaced by rents they can no longer afford. The benefits of urban renewal accrue to newcomers; the costs are borne by those with the least power to resist.
+
+Cities also face mounting challenges from climate change. Low-lying urban areas face increased flood risk; the "urban heat island" effect makes densely built environments significantly warmer than surrounding countryside. The rapid, often unplanned urbanization underway across much of Africa and South Asia creates infrastructure demands that local governments struggle to meet.
+
+What cities ultimately reveal is a fundamental tension in modern life: between the opportunity and dynamism that density creates, and the inequality and displacement that unmanaged growth produces.`
+  },
+
+  {
+    id: 28,
+    title: "Collective Memory: How Societies Construct the Past",
+    topic: "History",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["commemoration", "narrative", "heritage", "trauma", "identity"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Collective_memory",
+    body: `In 1925, the French sociologist Maurice Halbwachs proposed an idea that would reshape how scholars think about memory. Human beings, he argued, do not remember alone. Even our most intimate recollections are shaped by the social frameworks — the families, communities, and cultures — within which we live. Memory is not merely individual: it is collective.
+
+Collective memory refers to the shared representations of the past that a group holds: the stories, symbols, rituals, and interpretations through which communities understand where they came from and who they are. Every society constructs its collective memory through commemorative practices — national holidays, monuments, museums, school curricula, and public ceremonies. These are not neutral archives; they are choices about what to remember, what to emphasize, and what to omit.
+
+The relationship between collective memory and academic history is complex and often tense. Historians strive, at least in principle, for critical distance and accuracy. Collective memory, by contrast, serves the present: it builds group identity, legitimates authority, and provides moral frameworks. The same events — a war, a revolution, a colonial conquest — can be remembered in radically different ways by the societies involved, each version shaped by current needs and power relations.
+
+This is why control of collective memory is inherently political. Authoritarian governments routinely rewrite history books, censor archives, and demolish monuments to shape the stories citizens tell themselves. Debates over Confederate statues in the United States, colonial-era memorials in Europe, and school curricula across many countries all reflect deeper struggles over whose version of the past will be encoded into public space and official instruction.
+
+Collective memory also carries a darker dimension: the transmission of historical trauma. Communities that have experienced genocide, enslavement, or mass displacement carry a form of inherited wound — a shared knowledge of suffering that shapes collective identity across generations. How societies process such trauma — through acknowledgment, commemoration, silence, or denial — has profound consequences for social healing and intergroup relations.
+
+Understanding collective memory means recognizing that the past is never simply finished. It is constantly renegotiated in the present, shaped by power, identity, and the enduring human need to make sense of where we have come from.`
   }
 ];
