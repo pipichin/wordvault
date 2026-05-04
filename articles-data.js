@@ -524,5 +524,62 @@ This is why control of collective memory is inherently political. Authoritarian 
 Collective memory also carries a darker dimension: the transmission of historical trauma. Communities that have experienced genocide, enslavement, or mass displacement carry a form of inherited wound — a shared knowledge of suffering that shapes collective identity across generations. How societies process such trauma — through acknowledgment, commemoration, silence, or denial — has profound consequences for social healing and intergroup relations.
 
 Understanding collective memory means recognizing that the past is never simply finished. It is constantly renegotiated in the present, shaped by power, identity, and the enduring human need to make sense of where we have come from.`
+  },
+
+  {
+    id: 29,
+    title: "Universal Basic Income: A Safety Net for Everyone?",
+    topic: "Economics",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["subsidy", "inequality", "incentive", "poverty", "fiscal"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Universal_basic_income",
+    body: `Universal basic income (UBI) is a policy proposal that has attracted interest across the political spectrum: a regular cash payment made to every citizen, unconditionally, regardless of employment status or existing wealth. The idea is ancient in origin — Thomas More sketched something like it in Utopia in 1516 — but it has gained renewed attention in an era of automation-driven job displacement and rising economic inequality.
+
+Proponents argue that UBI would eliminate the poverty trap created by means-tested welfare systems. Under current arrangements, benefit recipients often lose support when they find work, creating a perverse incentive to remain unemployed. A universal payment removes this disincentive and replaces a bureaucratic tangle of conditional programs with a single, direct transfer that reaches everyone.
+
+Pilot programs in Finland, Kenya, and Stockton, California, have generated encouraging results. Finnish participants reported improved mental health and greater confidence in seeking employment. In Stockton, recipients used the cash to pay off debt, cover medical expenses, and — contrary to critics' predictions — work more, not less. These experiments suggest that trusting people to manage unconditional support is not misplaced.
+
+Critics nonetheless raise serious objections. The fiscal cost of a meaningful UBI is substantial; funding it would require either significant tax increases, cuts to existing services, or both. If the benefit replaces rather than supplements current welfare payments, vulnerable groups — disabled people, single parents — could lose specialized support that a flat payment cannot replicate. And there is concern that reducing the link between work and income may erode the sense of purpose and social contribution that employment provides.
+
+The deeper debate is philosophical. UBI's supporters see it as the logical extension of social citizenship — the idea that belonging to a society entails a share of its collective wealth. Critics worry it severs the reciprocal relationship between contribution and reward that holds communities together. How societies resolve this tension will shape economic policy for a generation.`
+  },
+
+  {
+    id: 30,
+    title: "When Languages Die: The Loss of Linguistic Diversity",
+    topic: "Linguistics",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["indigenous", "heritage", "linguistic", "assimilation", "revitalization"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Language_death",
+    body: `Of the roughly 7,000 languages spoken in the world today, linguists estimate that more than half are in danger of disappearing before the end of this century. A language is considered endangered when children are no longer learning it as their first language — when transmission across generations has broken down. At current rates, the world could lose the majority of its linguistic heritage within two to three generations.
+
+The causes of language death are multiple but typically share the same underlying dynamic. When a minority language community comes into sustained contact with a dominant one, the latter's economic and social advantages create powerful incentives for adoption. Children who wish to participate in education, commerce, and public life learn the dominant language; the ancestral tongue retreats to the home and eventually disappears as its last speakers age and die.
+
+What is lost when a language dies? The most immediate loss is cultural. Languages are not merely communication systems — they encode unique ways of categorizing experience, describing relationships, and understanding the natural world. Many indigenous languages contain ecological knowledge, such as classifications of plants and descriptions of seasonal patterns, that exists nowhere else. This knowledge disappears with the language that carries it.
+
+Languages also preserve irreplaceable oral traditions: stories, songs, legal customs, and philosophical concepts that resist translation. Some grammatical structures encode ways of relating to time, nature, and community that have no equivalent in major world languages, offering linguists and philosophers insights into the full range of human thought.
+
+Revitalization efforts have achieved notable successes. Welsh, once in rapid decline, is now spoken by more than 800,000 people following decades of policy support, immersive education, and media investment. Māori in New Zealand and Hebrew in Israel show that languages can be recovered from near-extinction. But revival requires sustained political will, community engagement, and financial resources that most endangered-language communities cannot command. The death of a language is not merely a cultural loss — it permanently forecloses possibilities of human understanding.`
+  },
+
+  {
+    id: 31,
+    title: "Surveillance Capitalism: When Your Behaviour Is the Product",
+    topic: "Technology & Society",
+    difficulty: "hard",
+    readingTime: 4,
+    keyWords: ["surveillance", "algorithm", "consent", "autonomy", "commodify"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Surveillance_capitalism",
+    body: `In the early years of the internet, the dominant promise was openness and empowerment. Digital networks would connect people, democratize information, and create unprecedented economic opportunities. What was less anticipated was the emergence of a new economic logic — one that the scholar Shoshana Zuboff calls "surveillance capitalism" — in which human experience itself becomes raw material for prediction and profit.
+
+Surveillance capitalism works by harvesting the behavioral data that users generate through online activity: every search, click, scroll, and purchase. This data is not merely collected to improve services — it is refined into predictive models of future behavior and sold to advertisers. The competitive advantage lies in the accuracy of predictions. The more precisely a platform can forecast what you will do, think, or want, the more valuable its advertising inventory becomes.
+
+The implications extend well beyond targeted advertising. Platforms optimized for behavioral prediction have powerful incentives to influence, not merely observe, user behavior — to steer choices in directions that serve commercial interests. Features designed to maximize engagement — infinite scroll, autoplay, notification alerts — exploit psychological vulnerabilities to extend time spent on the platform, generating more data and more revenue. Users consented to terms of service; they did not consent to having their psychological tendencies mapped and monetized.
+
+The political consequences are significant. When behavioral modification techniques are applied to information ecosystems at scale, they shape not only consumer choices but political opinions and civic participation. The Cambridge Analytica scandal — in which Facebook user data was harvested for targeted political advertising — illustrated how commercial surveillance infrastructure could be repurposed for political manipulation, potentially influencing electoral outcomes.
+
+Regulatory responses have emerged but remain incomplete. The European Union's General Data Protection Regulation gives citizens meaningful rights over their personal data, and proposed AI legislation would add further constraints. Yet the fundamental business model of the largest platforms — extracting behavioral surplus and selling predictions — has not been dismantled. Whether democratic societies can govern surveillance capitalism, or whether surveillance capitalism will increasingly govern them, is among the defining questions of the digital age.`
   }
 ];
