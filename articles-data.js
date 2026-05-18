@@ -614,5 +614,64 @@ Regulatory responses have emerged but remain incomplete. The European Union's Ge
     keyWords: ["patriarchy", "suffrage", "intersectionality", "gender equality", "empowerment"],
     sourceUrl: "https://en.wikipedia.org/wiki/Feminism",
     body: `Feminism is one of the most consequential social movements of the modern era. At its core, it holds that women and men should have equal rights and opportunities, and that the social systems and cultural norms preventing this equality must be challenged and changed. While the word itself was not widely used until the late nineteenth century, efforts to address the subordination of women reach much further back in history.\n\nThe movement is commonly described through the metaphor of "waves." The first wave, spanning roughly the mid-nineteenth to early twentieth centuries, focused on formal legal equality — most prominently, the right to vote. Women in the United Kingdom gained limited suffrage in 1918 and full suffrage in 1928; American women secured the vote with the Nineteenth Amendment in 1920. These victories were achieved through decades of organized campaigning, public protest, and civil disobedience.\n\nThe second wave, beginning in the 1960s and extending into the 1980s, broadened the agenda beyond legal rights to challenge social and cultural norms. Activists called attention to workplace discrimination, unequal pay, domestic violence, reproductive rights, and the gendered division of domestic labor. The phrase "the personal is political" captured the argument that private life — marriage, family, sexuality — is shaped by power relations that deserve political scrutiny and change.\n\nA third wave emerged in the 1990s, partly as a response to what younger feminists perceived as the second wave's overly narrow focus. Third-wave feminists emphasized the diversity of women's experiences and challenged the assumption that all women share the same priorities. The concept of intersectionality — developed by legal scholar Kimberlé Crenshaw — became central: it argues that gender inequality cannot be understood separately from race, class, sexuality, and other dimensions of social difference.\n\nContemporary feminism continues to evolve. The #MeToo movement, which spread rapidly from 2017, demonstrated the persistence of sexual harassment and assault across industries and drew attention to the structural conditions that enable it. Debates about gender identity have introduced new questions about the relationship between biological sex and social gender. Through all these developments, feminism's central commitment remains constant: a world where gender does not determine one's worth, opportunities, or safety.`
+  },
+
+  {
+    id: 35,
+    title: "Nationalism: The Force That Builds and Divides",
+    topic: "Politics",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["nationalism", "sovereignty", "self-determination", "civic", "chauvinism"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Nationalism",
+    body: `Nationalism is the political ideology holding that the nation — a group sharing a common culture, language, history, or territory — should form the basis of political organization, and that each nation is entitled to self-determination. Few ideas have shaped modern history more profoundly, for both better and worse.
+
+The concept rose to prominence in the nineteenth century as European empires began to fracture. Movements for national unification in Germany and Italy, independence struggles across Latin America, and eventually the dismantling of the Austro-Hungarian and Ottoman empires were all driven by nationalist sentiment. At its most powerful, nationalism could mobilize millions of ordinary people to sacrifice for a collective cause.
+
+Scholars distinguish between civic nationalism and ethnic nationalism. Civic nationalism defines the nation in terms of shared values, legal membership, and political participation: anyone who commits to a society's laws and institutions can belong to it. Ethnic nationalism, by contrast, defines membership by descent, language, or cultural inheritance — a vision that tends to be exclusive and has historically been used to justify discrimination and violence.
+
+The twentieth century demonstrated both the creative and destructive potential of nationalism. The same force that drove decolonization movements and gave voice to oppressed peoples also fueled two world wars and genocide. The Holocaust was underpinned by an extreme ethnic nationalism that defined the nation through racial exclusion.
+
+Today, nationalism has resurfaced as a major political force across many democracies, often combined with hostility to immigration, international institutions, and cosmopolitan elites. Brexit, the rise of right-wing parties across Europe, and similar movements globally all draw on this emotional reservoir.
+
+Understanding nationalism requires holding two ideas in tension. As a claim for cultural recognition and self-determination, it can be a legitimate and liberating force. As a justification for exclusion and hostility to outsiders, it becomes one of democracy's most dangerous adversaries. The challenge is to accommodate legitimate national pride without allowing it to curdle into chauvinism.`
+  },
+
+  {
+    id: 36,
+    title: "The Public Sphere: Democracy's Conversation",
+    topic: "Sociology",
+    difficulty: "hard",
+    readingTime: 4,
+    keyWords: ["deliberation", "discourse", "civil society", "pluralism", "accountability"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Public_sphere",
+    body: `Modern democracy depends on more than elections. For people to govern themselves meaningfully, they need spaces — physical and virtual — where they can deliberate about shared concerns: exchanging views, criticizing authority, and forming collective judgments. The philosopher Jürgen Habermas called this realm the "public sphere," and his analysis of its rise and decline remains one of the most influential frameworks in political theory.
+
+Habermas traced the origins of the bourgeois public sphere to the coffeehouses, salons, and periodicals of eighteenth-century Europe. These were spaces where private individuals came together to reason publicly about politics, literature, and society. Crucially, they operated on a norm of rational argument: what mattered was the quality of a contribution, not the social status of the person making it. For a historical moment, this created a forum for critical discourse outside the direct control of the state.
+
+The ideal was always partial. Women, the poor, and colonized peoples were systematically excluded from these deliberative spaces. But Habermas argued that the normative logic of the public sphere — that authority should be justified through argument — contained a democratic promise that those excluded would later invoke to demand inclusion.
+
+The concept raises urgent questions in the digital age. The internet, while enabling unprecedented participation, also fragments audiences into isolated communities that rarely engage with opposing views. Algorithmic social media rewards outrage and tribal affirmation over reasoned debate. Rather than one shared public conversation, we increasingly get many parallel ones — each more internally coherent and more hostile to the others.
+
+The public sphere concept also illuminates why press freedom and quality public broadcasting matter. They are not merely commercial services — they are infrastructure for democratic deliberation. When they weaken, democracy's communicative foundations erode with them. No institution can guarantee the quality of public reason, but robust, independent media creates the conditions in which it is at least possible.`
+  },
+
+  {
+    id: 37,
+    title: "Neoliberalism: The Economic Revolution That Remade the World",
+    topic: "Economics",
+    difficulty: "hard",
+    readingTime: 4,
+    keyWords: ["privatization", "deregulation", "inequality", "structural adjustment", "free market"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Neoliberalism",
+    body: `Neoliberalism is one of the most consequential and contested economic frameworks of the modern era. Broadly speaking, it holds that economic freedom — achieved through free markets, private property rights, deregulation, and minimal government intervention — is the foundation of individual liberty and social prosperity. From the 1970s onward, its ideas transformed economic policy across the world, with effects that are still fiercely debated.
+
+The intellectual roots of neoliberalism lie with thinkers like Friedrich Hayek and Milton Friedman, who argued that centrally planned economies were not only inefficient but fundamentally incompatible with human freedom. Their ideas gained political traction in the 1970s as the postwar Keynesian consensus — which had accepted a large role for government in managing the economy — broke down under stagflation: simultaneous high inflation and economic stagnation.
+
+The political breakthrough came with Margaret Thatcher in the United Kingdom in 1979 and Ronald Reagan in the United States in 1980. Both governments implemented tax cuts, deregulation, privatization of state-owned industries, and reductions in trade union power. The aim was to unleash market forces that had, in their view, been suppressed by decades of excessive state intervention.
+
+These policies spread globally through the International Monetary Fund and the World Bank, which attached conditions of market liberalization to loans given to developing countries — a process known as structural adjustment. Critics argued that these programmes forced countries to adopt policies serving Western financial interests while devastating public services and social protections for the poor.
+
+The consequences of four decades of neoliberal dominance remain bitterly disputed. Proponents credit it with generating unprecedented global economic growth. Critics point to sharply rising inequality within many countries, the hollowing out of the industrial working class, financial instability culminating in the 2008 crisis, and the erosion of public services. The political backlash — expressed through populism, protectionism, and a revival of industrial policy — suggests that the neoliberal consensus has frayed, even if no clear successor has emerged.`
   }
 ];
