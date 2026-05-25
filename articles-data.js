@@ -673,5 +673,64 @@ The political breakthrough came with Margaret Thatcher in the United Kingdom in 
 These policies spread globally through the International Monetary Fund and the World Bank, which attached conditions of market liberalization to loans given to developing countries — a process known as structural adjustment. Critics argued that these programmes forced countries to adopt policies serving Western financial interests while devastating public services and social protections for the poor.
 
 The consequences of four decades of neoliberal dominance remain bitterly disputed. Proponents credit it with generating unprecedented global economic growth. Critics point to sharply rising inequality within many countries, the hollowing out of the industrial working class, financial instability culminating in the 2008 crisis, and the erosion of public services. The political backlash — expressed through populism, protectionism, and a revival of industrial policy — suggests that the neoliberal consensus has frayed, even if no clear successor has emerged.`
+  },
+
+  {
+    id: 38,
+    title: "The Global Refugee Crisis: Displacement, Asylum, and Solidarity",
+    topic: "International Relations",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["asylum", "displacement", "persecution", "sovereignty", "humanitarian"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Refugee",
+    body: `Refugees are among the most vulnerable people in the world. Under international law, a refugee is someone who has fled their country of origin due to a well-founded fear of persecution on grounds of race, religion, nationality, political opinion, or membership in a particular social group. This definition originates in the 1951 Refugee Convention — a landmark treaty that established legal protections for displaced people in the aftermath of the Second World War.
+
+The scale of forced displacement today is the largest ever recorded. According to the UN Refugee Agency, more than 100 million people were forcibly displaced worldwide by 2022, including tens of millions of recognized refugees. Most have fled conflicts in Syria, Afghanistan, South Sudan, and Venezuela. Contrary to popular perception, the majority do not reach wealthy Western nations; roughly 70 percent are hosted by developing countries, often neighbors of their own.
+
+The most important legal protection offered by the Refugee Convention is the principle of non-refoulement: the obligation not to return refugees to territories where they face serious harm. But enforcement depends on state willingness, and many governments have tested or ignored these limits. Offshore processing arrangements, border pushbacks, and restrictive asylum procedures reflect the political pressures host governments face from anxious electorates.
+
+Public debate about refugees is frequently distorted by misinformation. Research consistently finds that refugees, given appropriate support, make significant economic and cultural contributions to host societies. Yet the perception that refugee arrivals strain public services fuels electoral support for restrictive policies in many democracies — a gap between evidence and political reality that advocates struggle to bridge.
+
+The tension between state sovereignty — the right of nations to control their borders — and humanitarian obligation lies at the heart of asylum policy. In practice, the burden of the global refugee crisis falls disproportionately on the poorest countries. Wealthier nations that have the greatest capacity to offer protection often accept the fewest refugees. Reforming this asymmetry requires not only political will but a genuine rethinking of what international solidarity demands in an era of mass displacement.`
+  },
+
+  {
+    id: 39,
+    title: "The Hard Problem of Consciousness: Why Is There Something It Is Like to Be You?",
+    topic: "Philosophy",
+    difficulty: "hard",
+    readingTime: 4,
+    keyWords: ["consciousness", "dualism", "physicalism", "qualia", "subjective"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Hard_problem_of_consciousness",
+    body: `The human brain contains roughly 86 billion neurons forming trillions of connections. Neuroscience has made extraordinary progress in mapping how the brain perceives, remembers, and controls behavior. Yet one question resists all scientific approaches so far: why does any of this physical activity feel like anything at all? This is what philosopher David Chalmers called "the hard problem of consciousness."
+
+Most problems in the science of mind are, in principle, tractable. Explaining how the brain recognizes faces, stores memories, or coordinates movement requires understanding which neural processes perform which functions. Chalmers called these "easy problems" — demanding scientifically, but conceptually straightforward. The hard problem is different: it asks why there is subjective experience at all. Why does seeing the color red produce an inner sensation — a felt quality — rather than merely triggering a behavioral response?
+
+Philosophers disagree sharply about how this problem can be solved. Physicalists argue that consciousness is entirely a product of brain activity, and that a complete neuroscientific account will eventually explain subjective experience too. The apparent mystery, they suggest, reflects conceptual confusion rather than a genuine gap in our understanding of the physical world.
+
+Dualists, following René Descartes, argue that mind and matter are fundamentally different kinds of thing, and that no purely physical description can capture the felt character of experience — what philosophers call "qualia." This view raises its own difficulties: if mental and physical events are truly distinct, how do they interact? How does a thought move a hand?
+
+A third position, panpsychism, has attracted renewed philosophical interest. It holds that some form of experience is a basic feature of reality — not confined to brains but present in rudimentary form throughout nature. Critics find this deeply counterintuitive; proponents argue it resolves the explanatory gap by treating consciousness as fundamental rather than as an improbable product of complex matter.
+
+The hard problem is not merely academic. It touches the question of moral status: if we cannot reliably identify the physical basis of consciousness, how can we determine which beings are capable of suffering and deserve protection? And as artificial intelligence grows more sophisticated, the question becomes practically urgent: would a sufficiently advanced computer be genuinely conscious, or merely simulate the appearance of an inner life?`
+  },
+
+  {
+    id: 40,
+    title: "Trade Unions and the Long Struggle for Workers' Rights",
+    topic: "Sociology",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["solidarity", "collective bargaining", "strike", "precarious", "labor rights"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Trade_union",
+    body: `A trade union is an organization of workers formed to protect and advance their collective interests in negotiations with employers. Where individual workers bargain alone, they face employers with vastly greater economic power. When workers unite and threaten collective action — a strike that halts production — that power relationship shifts. This is the central logic of unionism: solidarity as a counterweight to capital.
+
+Trade unions emerged during the Industrial Revolution, as workers in mines, factories, and railways organized to resist brutal conditions, poverty wages, and unlimited working hours. The rights that workers in wealthy countries now take for granted — the eight-hour workday, the weekend, paid holidays, child labor restrictions — were not granted voluntarily by employers. They were won through decades of collective action, often at great personal cost to those who organized.
+
+Through much of the twentieth century, union membership in wealthy democracies was high, and unions exercised significant political influence. In the postwar period, collective bargaining agreements produced rising wages that were broadly shared across the income distribution. Many economic historians argue that the relative equality of the postwar decades was, in part, a product of this union density — workers collectively capturing a larger share of the gains from economic growth.
+
+From the 1980s onward, union membership declined sharply in most wealthy countries. This reflected deliberate policy choices — the Thatcher and Reagan governments both took aggressive action to weaken union power — as well as structural shifts in labor markets. The growth of service-sector employment, part-time contracts, and outsourcing created workforces harder to organize. The rise of the gig economy — platforms that classify workers as independent contractors rather than employees — represents the latest challenge to traditional labor organization.
+
+The consequences are disputed but visible. Many economists link falling union density to rising income inequality, as workers' collective voice has weakened and the share of national income going to wages has declined relative to capital. A revival of union organizing in recent years — including successful campaigns at Amazon warehouses and Starbucks locations across the United States — suggests that the logic of collective action retains its force even in a transformed economy.`
   }
 ];
