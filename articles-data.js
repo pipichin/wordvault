@@ -732,5 +732,64 @@ Through much of the twentieth century, union membership in wealthy democracies w
 From the 1980s onward, union membership declined sharply in most wealthy countries. This reflected deliberate policy choices — the Thatcher and Reagan governments both took aggressive action to weaken union power — as well as structural shifts in labor markets. The growth of service-sector employment, part-time contracts, and outsourcing created workforces harder to organize. The rise of the gig economy — platforms that classify workers as independent contractors rather than employees — represents the latest challenge to traditional labor organization.
 
 The consequences are disputed but visible. Many economists link falling union density to rising income inequality, as workers' collective voice has weakened and the share of national income going to wages has declined relative to capital. A revival of union organizing in recent years — including successful campaigns at Amazon warehouses and Starbucks locations across the United States — suggests that the logic of collective action retains its force even in a transformed economy.`
+  },
+
+  {
+    id: 41,
+    title: "The Philosophy of Science: How Knowledge Advances",
+    topic: "Philosophy",
+    difficulty: "hard",
+    readingTime: 4,
+    keyWords: ["falsifiability", "paradigm", "empiricism", "objectivity", "anomaly"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Philosophy_of_science",
+    body: `Science is often presented as the most reliable path to truth about the natural world. But how does science actually work? What distinguishes a genuine scientific theory from a pseudoscientific one? These questions define the philosophy of science — a discipline that examines the methods, foundations, and limits of scientific knowledge.
+
+The most influential answer to what philosophers call the "demarcation problem" was proposed by Karl Popper. A theory is scientific, Popper argued, not because it can be confirmed by evidence, but because it can be falsified by it. A claim that no conceivable evidence could disprove is not science but metaphysics. Astrology and psychoanalysis, he suggested, were unfalsifiable: their practitioners could always reinterpret new evidence to protect existing beliefs. Physics, by contrast, makes precise predictions that could in principle be proven wrong — and this vulnerability is what makes it science.
+
+Thomas Kuhn challenged Popper's picture in his landmark 1962 book The Structure of Scientific Revolutions. Science does not advance through the steady accumulation of facts, Kuhn argued, but through periodic revolutions — moments when one entire framework of assumptions is replaced by another. These frameworks, which he called paradigms, shape what questions scientists ask, what counts as evidence, and how anomalies are interpreted. The shift from Newtonian to Einsteinian physics was not a matter of adding new facts to old ones: it required a fundamental reconceptualization of space, time, and matter.
+
+Kuhn's insight is unsettling. If scientists working within a paradigm tend to resist evidence that challenges it, science is less purely rational and more socially conditioned than its public image suggests. Philosophers like Paul Feyerabend took this further, arguing provocatively that no single method defines science — that the history of scientific progress involves creativity, rule-breaking, and even elements of persuasion.
+
+Science remains our most powerful tool for understanding nature, but it is a human practice — subject to institutional pressures, paradigm loyalty, and cognitive limitations. Recognizing this does not undermine science; it makes us more sophisticated in evaluating its claims and more alert to the difference between genuine scientific consensus and the mere appearance of one.`
+  },
+
+  {
+    id: 42,
+    title: "Social Movements: How Ordinary People Change the World",
+    topic: "Sociology",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["mobilization", "grassroots", "solidarity", "advocacy", "repertoire"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Social_movement",
+    body: `Throughout history, many of the most significant changes in law, culture, and politics have not come from governments acting alone but from sustained pressure by organized citizens. Social movements — collective efforts by people outside formal institutions to promote or resist change — have reshaped societies in ways that elections and legislation alone could not. The abolition of slavery, women's suffrage, civil rights, and environmental regulation were all driven, at least in part, by organized social mobilization.
+
+What makes a social movement? Sociologists distinguish movements from riots, interest groups, and political parties by their sustained character, informal organization, and direct challenge to existing power arrangements. A central difficulty is overcoming the "free-rider problem": if a movement's goal benefits everyone, why should any individual bear the personal costs of participation? Successful movements solve this through shared identity, solidarity, and the social rewards of belonging to a committed community working for common purpose.
+
+Three factors consistently influence a movement's prospects. Political opportunity matters: movements gain traction when political systems are unstable, elites are divided, or sympathetic officials hold power. Organizational capacity also determines outcomes — movements with experienced leadership, established networks, and material resources can sustain pressure far longer than those relying on spontaneous enthusiasm. Finally, framing is critical: movements that present their cause in terms of widely shared values — dignity, fairness, freedom — attract broader coalitions than those appealing only to narrow group interests.
+
+Not all movements achieve their stated goals, and success itself is difficult to define. The American civil rights movement secured landmark legislation in the 1960s while deeper structures of racial inequality remained intact. The global environmental movement has transformed public consciousness without producing emissions reductions proportionate to the scale of the crisis. Some movements collapse from internal divisions; others are repressed before gaining momentum.
+
+What social movements ultimately demonstrate is that the distribution of political power is never fixed. Through collective action and the willingness to bear personal costs for shared goals, people without formal authority can challenge entrenched institutions and alter the course of history. This possibility — which every movement represents — is one of democracy's most vital sources of energy and renewal.`
+  },
+
+  {
+    id: 43,
+    title: "Postmodernism: Questioning Grand Narratives",
+    topic: "Cultural Theory",
+    difficulty: "hard",
+    readingTime: 4,
+    keyWords: ["grand narrative", "deconstruction", "plurality", "epistemology", "skepticism"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Postmodernism",
+    body: `Postmodernism is one of the most debated intellectual movements of the late twentieth century. Originating in French philosophy and spreading into literary theory, sociology, and the arts, it represents a sustained challenge to the foundational assumptions of modern Western thought: that reason provides a reliable guide to truth, that history moves toward progress, and that objective knowledge is achievable.
+
+The central concept is Jean-François Lyotard's critique of "grand narratives" — the large, totalizing stories through which modernity explained itself: the inevitable march of scientific progress, the liberation of humanity through reason, the triumph of capitalism or socialism. Postmodernists argued these narratives were not neutral descriptions of reality but ideological constructions serving particular interests. No single story could capture the full diversity of human experience; truth, they insisted, is plural and situated in specific cultural contexts.
+
+Michel Foucault contributed one of the movement's most enduring ideas: the inseparability of power and knowledge. What counts as truth — whose voices are heard, which claims are recognized as authoritative — is shaped by power relations embedded in institutions. Foucault analyzed how prisons, hospitals, and schools produce particular forms of knowledge that reinforce social control. His method invites the question: not only "is this true?" but "who decides what counts as true, and who benefits?"
+
+Jacques Derrida's method of deconstruction examined how texts and arguments conceal internal contradictions. Language never achieves the fixed meanings it promises; every definition depends on what it excludes, and those exclusions reveal hidden assumptions deserving scrutiny.
+
+Critics raise a powerful objection: if all truth is relative, how can we distinguish scientific medicine from pseudoscience, or democratic governance from authoritarianism? Philosopher Jürgen Habermas argued that abandoning universal reason also abandons the grounds for moral and political critique. There is also concern that postmodern skepticism has been exploited to undermine legitimate scientific consensus.
+
+Yet postmodernism's core contribution remains valuable: the recognition that knowledge is situated, and that we should ask who speaks and who is silenced. It challenges complacency and invites a more critical engagement with the ideas and institutions we might otherwise accept uncritically.`
   }
 ];
