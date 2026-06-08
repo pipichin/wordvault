@@ -791,5 +791,62 @@ Jacques Derrida's method of deconstruction examined how texts and arguments conc
 Critics raise a powerful objection: if all truth is relative, how can we distinguish scientific medicine from pseudoscience, or democratic governance from authoritarianism? Philosopher Jürgen Habermas argued that abandoning universal reason also abandons the grounds for moral and political critique. There is also concern that postmodern skepticism has been exploited to undermine legitimate scientific consensus.
 
 Yet postmodernism's core contribution remains valuable: the recognition that knowledge is situated, and that we should ask who speaks and who is silenced. It challenges complacency and invites a more critical engagement with the ideas and institutions we might otherwise accept uncritically.`
+  },
+
+  {
+    id: 44,
+    title: "Ressentiment: How Humiliation Becomes Politics",
+    topic: "Philosophy",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["ressentiment", "humiliation", "condemnation", "transmute", "grievance"],
+    sourceUrl: "https://aeon.co/essays/what-explains-the-perpetual-need-for-political-enemies",
+    body: `Why do so many political movements seem to need an enemy — a villain to blame for the nation's troubles? One influential answer comes from the philosopher Friedrich Nietzsche, who used a French word, ressentiment, because he believed no single term in his own language captured what he meant.
+
+Ressentiment, in this sense, is more than ordinary resentment. It is a deeper emotional mechanism that transmutes pain, powerlessness, and humiliation into moral condemnation. Someone who feels weak, wronged, or overlooked converts that private suffering into a public story of good and evil, in which they appear as the innocent victim and someone else as the guilty cause.
+
+Nietzsche made the controversial claim that this mechanism, more than calm reflection, has shaped many of humanity's moral values. He wrote that morality truly "begins" at the moment ressentiment becomes creative — when people who feel powerless invent a system of values that condemns the strong and praises whatever qualities they themselves happen to possess, such as humility, patience, or quiet suffering.
+
+Applied to politics, the idea suggests why certain movements seem to run on grievance rather than vision. They define themselves chiefly through rejection: instead of offering a positive plan for the future, they unite supporters around a shared sense of injury, turning vague frustration into a clear and satisfying narrative — here is exactly who is to blame, and here is what must be done about them.
+
+This account is unsettling for anyone who values democratic life, because it implies that political loyalty can be built less on shared goals than on shared hatred. But naming the pattern may also be the beginning of resisting it — the next time a leader points confidently to an enemy, it is worth asking whether the accusation describes the world, or simply answers an emotional need.`
+  },
+
+  {
+    id: 45,
+    title: "Planetary Politics: Diplomacy for an Interconnected Earth",
+    topic: "International Relations",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["diplomacy", "sovereignty", "biosphere", "interdependence", "governance"],
+    sourceUrl: "https://aeon.co/essays/why-planetary-problems-need-a-new-approach-to-politics",
+    body: `For centuries, international politics has been organised around a simple unit: the sovereign nation-state, each pursuing its own interests, sometimes cooperating, more often competing. A growing number of thinkers now argue that this framework is poorly suited to the great problems of the twenty-first century.
+
+Climate change, the loss of biodiversity, ocean acidification, and pandemic disease do not respect borders. They are planetary problems, rooted in deep interdependence, that affect the Earth's systems as a whole. Yet the diplomatic tools available for addressing them were designed for a different purpose: negotiating between rival states defending their own advantage, not managing systems that every state depends on jointly.
+
+Critics go further, arguing that today's global governance does not actually transcend the nation-state system — it simply projects national rivalries onto a worldwide stage. The result, they say, is a familiar pattern of summits and agreements in which governments calculate what they can gain for themselves rather than what the planet as a whole requires.
+
+In response, some writers have proposed a new guiding principle, which they call "raison de Terre" — reason of the Earth — echoing the old diplomatic idea of "raison d'état," or reason of state, but redirecting loyalty from the nation to the biosphere itself. Under such a principle, a government's success would be measured partly by how well it protected the systems that sustain life, not solely by how well it served its own citizens.
+
+Sceptics doubt that nations, especially poorer ones wary of rules written by wealthier rivals, would ever surrender so much sovereignty voluntarily. But supporters respond that the Earth's systems will not pause to wait for politics to catch up — and that a diplomacy able to represent the planet's interests, and not only those of its states, may soon stop being an idealist's dream and become a practical necessity.`
+  },
+
+  {
+    id: 46,
+    title: "Donald Winnicott and the Self That Lives Between Us",
+    topic: "Psychology",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["psyche", "attunement", "relational", "intimacy", "dualism"],
+    sourceUrl: "https://psyche.co/ideas/for-donald-winnicott-the-psyche-is-not-inside-us-but-between-us",
+    body: `Where does the mind live? The common-sense answer is that it sits inside each of us, sealed within an individual skull, occasionally reaching out to connect with other equally separate minds. The British psychoanalyst Donald Winnicott offered a strikingly different picture of the psyche.
+
+According to Winnicott, people are not closed-off units that merely make contact from time to time. From the very beginning of life, we are radically open to one another. The earliest experience, he argued, is not of a separate self meeting a separate other, but of a shared field that only gradually divides into "me" and "you". He called this shared starting point the "social matrix of the psyche".
+
+This view reverses the order found in classical Freudian theory, which began with an isolated individual driven by inner urges who only later learned to manage relationships with other people. For Winnicott, connection comes first, and the separate self is what slowly emerges out of it. In one stroke, this sidesteps an old philosophical dualism — the puzzle of how two private minds, each sealed within itself, could ever truly reach one another — because on Winnicott's account, they were never entirely apart to begin with.
+
+This idea shaped an entire later tradition known as relational psychoanalysis. Its practitioners argue that the psyche does not simply exist by itself and then go looking for company; it comes alive only in the presence of someone who offers real attunement — who is attentive, responsive, and emotionally present. A baby's first sense of being a person, on this account, depends on having been met, intimately and reliably, by another.
+
+Beyond the therapist's office, Winnicott's idea makes a quietly radical suggestion: that solitude and intimacy are not rivals competing for our attention but two faces of one continuous process — and that the people attuned to us are not optional additions to who we are, but part of how a self comes into being in the first place.`
   }
 ];
