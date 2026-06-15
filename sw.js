@@ -1,5 +1,5 @@
 // WordVault Service Worker — offline support
-const CACHE = 'wordvault-v22';
+const CACHE = 'wordvault-v23';
 const ASSETS = [
   '/',
   '/index.html',

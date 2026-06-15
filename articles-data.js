@@ -848,5 +848,64 @@ This view reverses the order found in classical Freudian theory, which began wit
 This idea shaped an entire later tradition known as relational psychoanalysis. Its practitioners argue that the psyche does not simply exist by itself and then go looking for company; it comes alive only in the presence of someone who offers real attunement — who is attentive, responsive, and emotionally present. A baby's first sense of being a person, on this account, depends on having been met, intimately and reliably, by another.
 
 Beyond the therapist's office, Winnicott's idea makes a quietly radical suggestion: that solitude and intimacy are not rivals competing for our attention but two faces of one continuous process — and that the people attuned to us are not optional additions to who we are, but part of how a self comes into being in the first place.`
+  },
+
+  {
+    id: 47,
+    title: "The Language of Trust: What the Enron Tapes Reveal",
+    topic: "Linguistics",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["rapport", "legitimize", "covert", "credibility", "exploit"],
+    sourceUrl: "https://theconversation.com/the-fraudsters-playbook-our-study-of-enron-traders-shows-how-easily-the-language-of-trust-can-be-abused-284362",
+    body: `When the energy company Enron collapsed in 2001 amid one of the largest corporate fraud scandals in history, US investigators released hundreds of taped phone calls between traders. Two decades later, those recordings have become an unlikely treasure for linguists, offering one of the largest collections of spoken language ever gathered from illegal activity.
+
+A team of researchers analysed the calls to understand how the traders built and maintained trust with one another while coordinating market manipulation. What they found was not a chaotic free-for-all, but a surprisingly consistent pattern — a kind of playbook for establishing rapport, even among people engaged in wrongdoing.
+
+The researchers identified five recurring categories of "trust moves": bond, build, confide, probe, and repair. Bonding moves fostered emotional closeness, often through casual chat, shared jokes, and frequent swearing that signalled familiarity. Build moves relied on technical jargon to project expertise and credibility, reassuring listeners that the speaker knew what they were doing.
+
+Confide moves involved sharing sensitive or secret information, a gesture that deepened intimacy by implying special trust. Traders used these far more often than people in ordinary business conversations. Repair moves, meanwhile, appeared when someone's honesty was questioned — typically defensive language aimed at smoothing over doubt and restoring the relationship.
+
+The researchers argue that this playbook is not unique to corporate fraud. The same five moves appear in the language of online scammers, social media influencers, and even AI chatbots designed to seem warm and dependable. Recognising these covert techniques, they suggest, may help people notice when trust is being engineered rather than earned — a skill that feels increasingly necessary in an age of persuasive, algorithm-driven communication.`
+  },
+
+  {
+    id: 48,
+    title: "Where Did Language Come From? Nobody Really Knows",
+    topic: "History",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["symbolic", "speculative", "satire", "hypothesis", "cognition"],
+    sourceUrl: "https://theconversation.com/where-did-language-come-from-nobody-really-knows-but-the-theories-are-fascinating-284081",
+    body: `Of all the species on Earth, only humans use fully symbolic language — a system flexible enough to describe abstract ideas, imagine worlds that do not exist, and combine a finite set of sounds into infinite meanings. Yet despite enormous advances in linguistics, archaeology, and cognitive science, researchers still cannot say with confidence how this remarkable ability first emerged.
+
+The question is not new. In the nineteenth century, scholars proposed a flood of theories to explain the origin of speech. Many were given playful, almost mocking names by the German philologist Max Müller, who intended the labels partly as satire of theories he considered too speculative to take seriously.
+
+The best-known of these is the "Bow-Wow" theory, which proposed that language began as imitation of natural sounds — early humans mimicking animal cries, splashing water, thunder, and birdsong, then gradually turning these imitations into words. Other theories carried similarly colourful nicknames, each capturing a different guess about the spark that ignited human speech.
+
+The debate became so heated and unproductive that in 1866 the Linguistic Society of Paris formally banned papers on the origin of language altogether, judging the topic hopelessly unresolvable. The ban shaped linguistics for generations, pushing the question to the margins of the discipline.
+
+More recent hypotheses take a gentler approach. One suggests that as early humans began walking upright, parents needed new ways to soothe infants from a distance, and that soothing "baby talk" — sing-song vocalisations and cooing — may have laid the groundwork for later speech.
+
+Today, most researchers accept that no single theory tells the whole story. Language likely emerged gradually, through some combination of gesture, emotional vocalisation, rhythm, social cooperation, and growing cognitive complexity — each theory capturing one piece of a puzzle that may never be fully assembled.`
+  },
+
+  {
+    id: 49,
+    title: "Has the Fed Fixed the Economy? Mixed Signals for 2026",
+    topic: "Economics",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["resilient", "delinquency", "monetary", "tariff", "ambiguous"],
+    sourceUrl: "https://theconversation.com/has-the-fed-fixed-the-economy-yet-and-other-burning-economic-questions-for-2026-272127",
+    body: `The United States enters 2026 in an unusual position. Inflation has fallen significantly from its peak in 2022, overall economic growth has held up better than many economists expected, and yet ordinary households continue to report that their financial situation feels shaky and uncertain.
+
+Much of the attention is focused on the Federal Reserve, the country's central bank, which closed out 2025 by cutting its benchmark interest rate for the third time that year. The move reopened a familiar debate among economists: is the Fed nearing the end of a cycle of easing monetary policy because the economy has stabilised, or is the central bank cutting rates because a cooling labour market signals trouble ahead?
+
+The data offers conflicting answers. On the positive side, gross domestic product has been surprisingly resilient, expanding at a pace that matches or exceeds the years before the pandemic. Businesses that delayed major investments are watching closely for signs that conditions have truly stabilised.
+
+On the more troubling side, consumer behaviour looks increasingly uneven. While spending overall remains strong, delinquency rates — the share of borrowers falling behind on loan payments — have risen from historically low levels. At the same time, the extra savings many households built up during the pandemic have largely been spent down, leaving less of a cushion against unexpected costs.
+
+Looking ahead, economists say much depends on factors beyond the Fed's control: decisions about taxes, tariffs, and regulation that remain genuinely ambiguous. Greater clarity on these fronts, they argue, could be the key to unlocking the business investment that has been held back — and to determining whether 2026 brings continued resilience or a long-anticipated downturn.`
   }
 ];
