@@ -907,5 +907,68 @@ The data offers conflicting answers. On the positive side, gross domestic produc
 On the more troubling side, consumer behaviour looks increasingly uneven. While spending overall remains strong, delinquency rates — the share of borrowers falling behind on loan payments — have risen from historically low levels. At the same time, the extra savings many households built up during the pandemic have largely been spent down, leaving less of a cushion against unexpected costs.
 
 Looking ahead, economists say much depends on factors beyond the Fed's control: decisions about taxes, tariffs, and regulation that remain genuinely ambiguous. Greater clarity on these fronts, they argue, could be the key to unlocking the business investment that has been held back — and to determining whether 2026 brings continued resilience or a long-anticipated downturn.`
+  },
+
+  {
+    id: 50,
+    title: "Does Language Shape the Way We Think?",
+    topic: "Linguistics",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["linguistic relativity", "cognition", "perception", "bilingual", "hypothesis"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Linguistic_relativity",
+    body: `The question of whether the language we speak shapes the way we think has fascinated philosophers and linguists for over a century. The idea, known as the Sapir-Whorf hypothesis or linguistic relativity, was developed by linguist Edward Sapir and his student Benjamin Lee Whorf. In its strongest form, it claims that language does not merely express thought but actually determines it — that speakers of different languages live in fundamentally different cognitive worlds.
+
+Whorf drew attention to structural differences between English and Native American languages. He argued that certain languages lacked tensed verbs in the way English does, and concluded that their speakers perceived time itself differently. These specific claims have since been challenged — linguists found his analysis of Hopi grammar was flawed — but the broader question he raised remains very much alive in cognitive science.
+
+More recent research has shifted toward a moderate claim: that language influences certain aspects of perception and cognition without completely determining them. Psychologist Lera Boroditsky's experiments found that speakers of languages with grammatical gender associate different qualities with the same objects depending on the gender their language assigns to the relevant word. A bridge is masculine in German and tends to be described as strong and sturdy; the same bridge is feminine in Spanish and tends to be described as elegant and slender.
+
+Research on colour perception has been particularly illuminating. Languages vary considerably in how they divide the colour spectrum. Russian uses separate basic terms for light blue and dark blue, while English uses a single word. Studies show that Russian speakers are measurably faster at distinguishing shades from different named categories, suggesting that linguistic labels genuinely sharpen perceptual discrimination.
+
+Bilingual speakers offer a further perspective. Many report thinking differently depending on which language they are using — feeling more formal in one, more expressive in another, or reaching different moral intuitions when the same dilemma is posed in their first versus second language.
+
+The Sapir-Whorf hypothesis, in its moderate form, leads to a productive conclusion: language and thought are deeply intertwined without either being entirely the slave of the other. Learning a new language does not give you a new mind — but it does open new windows onto the world.`
+  },
+
+  {
+    id: 51,
+    title: "The Loneliness Epidemic: Why Modern Life Leaves Us Disconnected",
+    topic: "Psychology",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["loneliness", "isolation", "well-being", "social bonds", "epidemic"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Loneliness",
+    body: `In 2023, the United States Surgeon General issued an unusual public health advisory: a formal warning about loneliness. Americans, he reported, were spending less time with friends and family and feeling more socially disconnected than previous generations. The health consequences, he warned, were comparable to smoking fifteen cigarettes a day. Loneliness, once considered a private emotional problem, had become a matter of urgent public concern.
+
+The distinction between loneliness and solitude is important. Solitude — chosen time spent alone — can be restorative and creative. Loneliness is something different: the painful gap between the social connection one has and the connection one desires. It is entirely possible to feel profoundly lonely in a crowded city surrounded by acquaintances, while feeling content in physical isolation. The condition is subjective and relational, not simply a measure of how many people are nearby.
+
+The health consequences of chronic loneliness are severe and well-documented. Lonely individuals show elevated levels of stress hormones, disrupted sleep, and weakened immune responses. Long-term loneliness is associated with significantly higher risks of cardiovascular disease, cognitive decline, and premature death. Neuroscientists have found that the brain processes social exclusion in the same regions that register physical pain — which helps explain why rejection can feel so literally painful.
+
+Several structural trends have contributed to what researchers describe as a loneliness epidemic. In many wealthy societies, more people live alone than at any previous point in history, family sizes have shrunk, and geographical mobility has weakened neighborhood ties. The decline of civic and religious institutions has removed common spaces where people once gathered regularly. Digital communication connects at a distance but does not fully replicate the trust that develops through sustained face-to-face contact.
+
+Young adults, somewhat counterintuitively, report higher levels of loneliness than older generations despite being the most digitally connected. One explanation is that social media cultivates comparison rather than genuine intimacy, generating anxiety about one's social standing while offering limited emotional support.
+
+Addressing loneliness requires both personal and structural responses. Investing in public spaces, supporting community organizations, and designing neighborhoods that encourage interaction can all reduce isolation. But the epidemic also reflects cultural values — individualism and self-sufficiency — that make acknowledging the need for connection feel like an admission of weakness.`
+  },
+
+  {
+    id: 52,
+    title: "Press Freedom: Why Independent Journalism Matters for Democracy",
+    topic: "Media",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["accountability", "investigative journalism", "censorship", "press freedom", "fourth estate"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Freedom_of_the_press",
+    body: `The press is sometimes described as democracy's "fourth estate" — a reference to the three traditional branches of government and the press as an informal fourth power capable of holding them to account. This metaphor captures a foundational idea in democratic theory: that free and independent journalism is not merely a cultural amenity but a structural requirement for accountable government.
+
+Why does press freedom matter? Governments, like all powerful institutions, tend to operate more honestly when they know their actions will be observed and reported. Investigative journalism has exposed some of the most consequential abuses of power in modern history — from the Watergate scandal that ended a US presidency to the Panama Papers revelations that implicated political leaders around the world in financial corruption. Without journalists willing to investigate and editors willing to publish, these stories would have remained hidden.
+
+The relationship between press freedom and democratic quality is empirically strong. Research across countries consistently finds that political systems with freer media are less corrupt, more transparent, and more responsive to citizen concerns. Conversely, when press freedom erodes, accountability typically follows. Leaders who silence critical media often do so precisely because their conduct would not survive public scrutiny — which is itself evidence of the press's power.
+
+Yet press freedom faces mounting threats globally. Some are governmental: authoritarian leaders pass laws criminalizing criticism, imprison journalists, or use economic pressure to bring media outlets under friendly ownership. Other threats are structural: as advertising revenue migrated to digital platforms, many local newspapers closed entirely, leaving communities with no source of local accountability journalism — a phenomenon researchers call "news deserts."
+
+Disinformation presents a third challenge. When audiences cannot distinguish reliable reporting from fabricated stories, the credibility on which press freedom depends is eroded even without direct censorship. In such an environment, the formal existence of press freedom may not produce the accountability it promises.
+
+The response is not to restrict the press but to invest in the conditions that make good journalism possible: independent public broadcasting, sustainable business models for local news, legal protections for journalists and their sources, and citizens with the media literacy to evaluate what they read.`
   }
 ];
