@@ -970,5 +970,68 @@ Yet press freedom faces mounting threats globally. Some are governmental: author
 Disinformation presents a third challenge. When audiences cannot distinguish reliable reporting from fabricated stories, the credibility on which press freedom depends is eroded even without direct censorship. In such an environment, the formal existence of press freedom may not produce the accountability it promises.
 
 The response is not to restrict the press but to invest in the conditions that make good journalism possible: independent public broadcasting, sustainable business models for local news, legal protections for journalists and their sources, and citizens with the media literacy to evaluate what they read.`
+  },
+
+  {
+    id: 53,
+    title: "Restorative Justice: Healing Crime Instead of Just Punishing It",
+    topic: "Criminology",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["restorative justice", "rehabilitation", "victim", "offender", "reconciliation"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Restorative_justice",
+    body: `When someone commits a crime, the traditional legal response is to identify the offender, determine guilt, and impose a punishment — typically imprisonment or a fine. This system focuses on the violation of a law and the state's response to it. But critics have long questioned whether punishment alone achieves the deeper goals of justice: repairing harm, reducing future crime, and supporting those affected. Restorative justice offers an alternative framework built around healing rather than punishment.
+
+At the heart of restorative justice is the idea that crime is primarily an injury to people and relationships, not merely a breach of legal rules. Rather than replacing the offender with the state as the injured party, restorative approaches bring together the person who caused harm, those who were harmed, and members of the affected community. Structured conversations — sometimes called victim-offender mediation, community conferencing, or sentencing circles — allow participants to discuss the impact of the crime, ask questions, and collaboratively agree on how to make amends.
+
+The contrast with conventional justice is significant. In a traditional courtroom, victims often have no formal voice. They may not be told why the offence occurred or given the opportunity to ask the offender directly. The offender, meanwhile, typically engages with lawyers and a judge rather than confronting the real consequences of their actions for another person. Restorative processes put those affected at the centre.
+
+Research findings have been broadly encouraging. Studies from New Zealand, Australia, the United Kingdom, and the United States show that restorative processes tend to produce higher rates of victim satisfaction than standard court proceedings. Offenders who go through these programmes often show lower rates of reoffending compared with those who receive conventional sentences, particularly for young and first-time offenders.
+
+Restorative justice is not without criticism. Sceptics argue that it may be unsuitable for serious violent crimes, that victims should never be pressured to participate, and that without proper safeguards it could result in inconsistent outcomes. These are legitimate concerns that practitioners continue to address through careful programme design and trained facilitators.
+
+Despite these limitations, restorative justice has earned a place alongside — and sometimes instead of — conventional sentencing in many legal systems. It reflects a broader rethinking of what criminal justice is for: not only to punish wrongdoing, but to restore dignity, repair relationships, and give communities a role in healing the harm done within them.`
+  },
+
+  {
+    id: 54,
+    title: "What Ethnography Teaches Us About Human Diversity",
+    topic: "Anthropology",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["ethnography", "fieldwork", "participant observation", "cultural relativism", "kinship"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Ethnography",
+    body: `Humans are remarkably diverse. Across the world, people organize families in different ways, hold different beliefs about health and illness, conduct rituals that would puzzle outsiders, and build economies on entirely different assumptions. Understanding this diversity is the central project of cultural anthropology — a discipline that developed in the nineteenth and twentieth centuries to study human societies and cultures in their full complexity.
+
+The defining method of cultural anthropology is ethnography: sustained, participatory fieldwork in which a researcher lives within a community, often for a year or more, learning the local language and participating in daily life. The aim is not merely to observe from a distance but to understand how people make sense of their own world from the inside. Bronisław Malinowski, who conducted pioneering fieldwork in the Trobriand Islands in the early twentieth century, helped establish this standard — go there, learn the language, and stay long enough to understand what is actually happening rather than what looks familiar from outside.
+
+A core principle that emerged from this practice is cultural relativism — the methodological commitment to understanding a culture on its own terms before judging it by the standards of another. This does not mean approving of every practice. It means suspending premature judgement long enough to understand what a practice means to those who perform it and how it fits into a broader system of values and relationships.
+
+Ethnography has produced influential insights that reshaped the human sciences. Margaret Mead's research in Samoa and New Guinea in the 1920s challenged assumptions that gender roles were biologically fixed by showing how differently societies can construct masculinity and femininity. Clifford Geertz's concept of "thick description" argued that culture must be read like a text — interpreted for layers of meaning rather than measured as simple behaviour.
+
+The method is not without controversy. Post-colonial scholars have raised serious concerns: for much of its history, anthropology studied non-Western societies through a Western lens that sometimes reinforced hierarchies of civilization. Contemporary anthropology engages seriously with these critiques, and many researchers now collaborate with the communities they study, ensuring that knowledge flows in more than one direction.
+
+The discipline's core insight — that human beings are culturally shaped creatures who can only be understood in context — remains as valuable as ever, especially in a world where cross-cultural understanding is increasingly essential.`
+  },
+
+  {
+    id: 55,
+    title: "The Socratic Method: Why Questioning Is the Oldest Form of Teaching",
+    topic: "Education",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["Socratic method", "dialogue", "critical questioning", "pedagogy", "reasoning"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Socratic_method",
+    body: `In 399 BCE, an Athenian court sentenced the philosopher Socrates to death for corrupting the youth and showing impiety toward the gods. The real offence, many historians believe, was more subtle: Socrates had spent decades publicly questioning the knowledge and authority of anyone who claimed to know something important — politicians, poets, craftsmen — and demonstrating, through relentless questioning, that their confidence was largely unfounded. He was dangerous not because he taught answers but because he taught people how to question.
+
+The method associated with Socrates — now called the Socratic method or Socratic dialogue — works by systematic questioning rather than direct instruction. Instead of presenting conclusions for students to accept, the teacher asks questions that lead learners to examine their own assumptions, reveal inconsistencies in their reasoning, and arrive at understanding through their own intellectual effort. The goal is not to fill an empty mind but to activate a thinking one.
+
+Plato's dialogues show this technique at work. In the Meno, Socrates demonstrates that an uneducated slave boy can work through a geometry problem by himself, given only the right questions. This experiment illustrates what Socrates called his "midwifery" role — the idea that knowledge is not poured into a student but drawn out from within. The teacher's task is to help birth understanding already latent in the learner.
+
+The Socratic method has had an enduring influence on education worldwide. It is the explicit model for law school instruction in the United States, where professors call on students to apply legal principles to hypothetical cases, probing their reasoning until it holds or collapses. Versions of it appear in medical training, philosophy seminars, and progressive primary schools where children are encouraged to ask "why" rather than simply memorize.
+
+Critics point to real limitations. The method works best in small groups and with students who already possess foundational knowledge. It can be intimidating or confusing when applied without sensitivity to who is in the room. A learner who already fears being wrong may be silenced rather than stimulated by public questioning.
+
+Yet the core insight endures: genuine understanding is active, not passive. Learning happens most deeply not when we receive information but when we are challenged to think — and then to think again. In this sense, Socrates' two-and-a-half-thousand-year-old method remains one of the most powerful tools in education.`
   }
 ];
