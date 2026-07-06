@@ -1033,5 +1033,62 @@ The Socratic method has had an enduring influence on education worldwide. It is 
 Critics point to real limitations. The method works best in small groups and with students who already possess foundational knowledge. It can be intimidating or confusing when applied without sensitivity to who is in the room. A learner who already fears being wrong may be silenced rather than stimulated by public questioning.
 
 Yet the core insight endures: genuine understanding is active, not passive. Learning happens most deeply not when we receive information but when we are challenged to think — and then to think again. In this sense, Socrates' two-and-a-half-thousand-year-old method remains one of the most powerful tools in education.`
+  },
+
+  {
+    id: 56,
+    title: "Electoral Systems: How We Choose Who Governs",
+    topic: "Politics",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["proportional representation", "constituency", "mandate", "turnout", "gerrymandering"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Electoral_system",
+    body: `Electoral systems are the rules that determine how votes translate into political power. They shape which parties govern, how well different groups are represented, and whether elections feel fair. Few decisions in constitutional design have more far-reaching consequences than the choice of voting system.
+
+The two most widely used approaches are majoritarian and proportional systems. In first-past-the-post (FPTP), used in the United States and United Kingdom, the candidate with the most votes in each constituency wins — regardless of whether they achieved a majority. These systems tend to produce strong, decisive governments. However, a party can win a parliamentary majority with well under half the national vote, effectively leaving millions of citizens unrepresented. This distortion is sometimes amplified further by gerrymandering — the deliberate redrawing of constituency boundaries to favour one party over another.
+
+Proportional representation (PR), by contrast, allocates seats roughly in proportion to each party's overall vote share. Common across Europe, PR tends to produce parliaments that more accurately reflect the full range of voter opinion. The trade-off is a higher likelihood of coalition governments, which can make decisive leadership more difficult.
+
+Hybrid approaches attempt to combine the advantages of both systems. Germany's mixed-member proportional method pairs local constituency representatives with additional seats drawn from party lists, correcting some distortions of pure FPTP. Ranked-choice voting, used in Ireland and increasingly adopted in the United States, allows voters to rank candidates in order of preference, reducing strategic voting and giving smaller parties a fairer chance.
+
+The stakes of electoral design are significant. Research consistently finds that proportional systems produce higher voter turnout, greater representation of women and minority groups, and a broader range of parties in parliament. FPTP tends to produce more stable governments but frequently leaves large sections of the electorate without an effective voice. The choice of electoral system is ultimately not a technical matter but a political one — a reflection of what democracy is for and whose mandate should count.`
+  },
+
+  {
+    id: 57,
+    title: "Empathy: More Complicated Than It Seems",
+    topic: "Psychology",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["cognitive empathy", "affective empathy", "compassion fatigue", "bias", "moral reasoning"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Empathy",
+    body: `Empathy — the capacity to understand and share the feelings of another person — is widely regarded as one of the most important qualities in human social life. It enables close relationships, drives moral concern, and makes cooperation across social divides possible. Yet research reveals that empathy is more complicated, and more limited, than its reputation suggests.
+
+Psychologists distinguish between two main types. Cognitive empathy is the ability to understand what another person is thinking or feeling — to take their perspective without necessarily experiencing it yourself. Affective empathy goes further: you actually feel something of what the other person is experiencing. Both are socially valuable but serve different purposes. Surgeons and therapists may deliberately cultivate cognitive empathy while moderating affective empathy, so they can remain effective without being overwhelmed by their patients' distress.
+
+The moral importance of empathy seems obvious — people who can genuinely feel others' pain should be more likely to act to relieve it. Yet psychologist Paul Bloom has made a provocative counterargument: empathy, he contends, is a poor guide to ethical action because it is inherently biased. We empathise most strongly with individuals who are nearby, visible, or similar to ourselves. Large, distant, or abstract populations suffering far greater harm frequently receive far less moral attention. This partiality, Bloom argues, can lead to worse collective outcomes than calm, impartial reasoning.
+
+There is also the problem of compassion fatigue. Healthcare workers, emergency responders, and social workers who engage daily with suffering frequently experience a gradual depletion of their emotional capacity — a wearing-down of their ability to feel genuinely moved. Learning to sustain care without being consumed by it is one of the hardest challenges in any caring profession.
+
+What the research suggests is not that empathy is unimportant, but that it works best when paired with broader moral reasoning. Empathy opens us to another person's reality; reason helps us act wisely and fairly on what we feel. Together, they are more powerful — and more just — than either alone.`
+  },
+
+  {
+    id: 58,
+    title: "The Enlightenment: When Reason Challenged Tradition",
+    topic: "History",
+    difficulty: "hard",
+    readingTime: 4,
+    keyWords: ["rationalism", "secular", "autonomy", "empiricism", "censorship"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Age_of_Enlightenment",
+    body: `The Enlightenment — the great intellectual movement that swept through Europe in the seventeenth and eighteenth centuries — did not need armies to overturn the established order. It worked through ideas: the radical proposition that human reason, applied rigorously and without prejudice, was sufficient to understand nature, reform society, and challenge traditional authority. Its legacy can be felt in every democratic constitution, scientific institution, and declaration of universal rights that exists today.
+
+The movement's central commitment was to reason over tradition. Where earlier European thought had largely deferred to scripture and ecclesiastical authority, Enlightenment thinkers argued that knowledge must be earned through observation, experiment, and logical argument. This empiricist confidence fueled rapid advances in natural science, political philosophy, and economics, and made rational criticism of political and religious institutions not just permissible but necessary.
+
+Key figures shaped the era in different ways. John Locke argued that legitimate political authority requires the consent of the governed — an idea that directly inspired the American Declaration of Independence and the French Revolution. Voltaire used wit and satire to attack religious fanaticism and censorship, insisting on freedom of thought as a fundamental right. Immanuel Kant, in his celebrated 1784 essay, defined the Enlightenment in a single memorable phrase: the courage to use one's own reason without the guidance of another — "Dare to know."
+
+Not everyone welcomed the movement's ambitions. Rousseau, himself partly of the Enlightenment tradition, worried that reason without moral feeling was hollow and that modern civilization was corrupting natural human goodness. Romantic critics later argued that the celebration of rational autonomy suppressed emotion, imagination, and cultural particularity. Contemporary scholars have added a further challenge: the Enlightenment's universalist ideals coexisted with slavery, colonial conquest, and the systematic exclusion of women from intellectual and political life — a contradiction that demands honest reckoning.
+
+The Enlightenment's achievements remain foundational. The idea that the world can be rationally understood, that authority must justify itself through argument rather than inherited tradition, and that individuals possess inherent rights and autonomy — these convictions continue to define the horizon of liberal democratic life. They are imperfect and incomplete. But they remain the standards against which modern political and intellectual life is still measured, and at its best, inspired.`
   }
 ];
