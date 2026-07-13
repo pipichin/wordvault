@@ -1090,5 +1090,66 @@ Key figures shaped the era in different ways. John Locke argued that legitimate 
 Not everyone welcomed the movement's ambitions. Rousseau, himself partly of the Enlightenment tradition, worried that reason without moral feeling was hollow and that modern civilization was corrupting natural human goodness. Romantic critics later argued that the celebration of rational autonomy suppressed emotion, imagination, and cultural particularity. Contemporary scholars have added a further challenge: the Enlightenment's universalist ideals coexisted with slavery, colonial conquest, and the systematic exclusion of women from intellectual and political life — a contradiction that demands honest reckoning.
 
 The Enlightenment's achievements remain foundational. The idea that the world can be rationally understood, that authority must justify itself through argument rather than inherited tradition, and that individuals possess inherent rights and autonomy — these convictions continue to define the horizon of liberal democratic life. They are imperfect and incomplete. But they remain the standards against which modern political and intellectual life is still measured, and at its best, inspired.`
+  },
+
+  {
+    id: 59,
+    title: "Personality and Morality: Are Your Values Really Your Own?",
+    topic: "Psychology",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["personality", "moral intuition", "conscientiousness", "ideology", "character"],
+    sourceUrl: "https://psyche.co/ideas/your-sense-of-right-and-wrong-is-interwoven-with-your-personality",
+    body: `Most people believe that their moral values are the product of careful reflection — principles they have thought through, tested against evidence, and freely adopted. Psychologists increasingly suggest a different picture: that our sense of right and wrong is not a separate faculty operating above our personality, but is deeply woven into the character traits we carry through life.
+
+Research in personality psychology has long identified a set of core traits — the so-called "Big Five" — that reliably predict behaviour across cultures: openness to experience, conscientiousness, agreeableness, extraversion, and emotional stability. What researchers have more recently found is that these same traits predict not only how we behave but what we consider morally important.
+
+People who score high in openness — curious, drawn to novelty, comfortable with ambiguity — tend to prioritise values such as individual freedom, creativity, and tolerance. Those high in conscientiousness — organised, dutiful, and rule-following — tend to emphasise order, responsibility, and loyalty to established institutions. Agreeableness predicts how much we weight the feelings of others in our ethical judgements.
+
+These associations have significant political implications. Psychologist Jonathan Haidt has argued that political disagreements often reflect different moral intuitions rather than different levels of reasoning ability. Conservatives and liberals do not merely weigh the same moral considerations differently — they appear to be responding to different moral signals altogether, shaped in part by the personalities they carry into the political arena.
+
+The unsettling implication is that moral convictions are partly temperamental — shaped by the kind of person we happened to become, not only by the arguments we have encountered. This does not make morality arbitrary. It does suggest that convincing someone of a moral position may require engaging their character, not merely refuting their arguments.
+
+Understanding the personality-morality connection is also a first step toward genuine moral communication across political difference. Rather than assuming the other side is simply irrational or dishonest, we might recognise that they are, in part, responding to moral concerns that their personality makes salient — concerns that feel equally obvious and urgent to them.`
+  },
+
+  {
+    id: 60,
+    title: "Does Modernisation Erase Cultural Difference — or Amplify It?",
+    topic: "Sociology",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["modernisation", "cultural identity", "convergence", "tradition", "individualism"],
+    sourceUrl: "https://psyche.co/ideas/does-modernisation-erase-cultural-difference-or-amplify-it",
+    body: `One of the most persistent predictions about the modern world is that it is making all cultures more alike. As countries industrialise, urbanise, and connect to global media and markets, the argument goes, they converge toward a common set of values: individualism, secularism, and broadly Western consumer culture. Distinctive traditions, local languages, and alternative worldviews will gradually fade, absorbed into a single global modernity.
+
+This "convergence hypothesis" has appealed to both optimists who welcome it as progress and pessimists who mourn it as loss. But cross-cultural psychologists have been gathering evidence that complicates the picture considerably.
+
+One emerging framework is what some researchers call the "seed model." Rather than modernisation acting as a flattening force that smooths away difference, it may act more like water on dormant seeds — providing the resources and conditions for pre-existing cultural differences to grow and become more visible. In this view, the values embedded in a society's history and religion are not simply overwritten by economic development; they persist and shape how modernity is experienced and interpreted.
+
+Evidence from the World Values Survey, a long-running international study, lends some support to this view. While societies do shift toward greater emphasis on self-expression and secular values as they develop economically, the relative differences between cultural groups tend to remain stable — and sometimes widen. Protestant and Catholic European countries, Confucian East Asian societies, and Islamic-majority societies follow recognisable cultural trajectories that modernisation does not erase.
+
+The implications are significant for global politics, education, and international business. Rather than expecting convergence, policymakers and organisations may need to engage seriously with enduring cultural difference. Modernisation does not create a uniform world; it creates a more complex one, in which ancient cultural seeds grow in new and often unexpected directions.
+
+For individuals navigating between their own traditions and the pressures of global modernity, this research offers a reassuring conclusion: the tension between heritage and change is not necessarily a path toward cultural loss. It may, instead, be what allows cultures to remain vital and distinct.`
+  },
+
+  {
+    id: 61,
+    title: "Political Anxiety: How Social Media Is Stressing Us Out",
+    topic: "Psychology",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["political stress", "anxiety", "social media", "civic engagement", "polarization"],
+    sourceUrl: "https://theconversation.com/stressed-out-by-politics-youre-not-imagining-it-and-research-shows-that-social-media-is-largely-to-blame-274849",
+    body: `Many people who regularly follow the news or scroll through social media report a familiar feeling: a low-grade anxiety that politics has become too overwhelming, too threatening, and too exhausting. Research confirms that this experience is real, widespread, and growing. Political stress — the psychological distress associated with following political events — is now recognised as a significant public health concern in many countries.
+
+Surveys in the United States and Europe consistently show that large proportions of the population feel politically anxious. Younger adults, particularly members of Generation Z who grew up with social media as their primary information environment, report levels of political stress higher than those of older generations — despite generally being less directly affected by many policy outcomes.
+
+Researchers point to specific features of social media as a key driver. Political content on platforms such as X (formerly Twitter), Facebook, and TikTok is systematically skewed toward emotionally intense and confrontational material. The reason is partly algorithmic: content that provokes strong reactions — outrage, fear, indignation — generates more engagement, and engagement is what platforms optimise for. The result is an information environment that presents politics as an endless series of crises, conflicts, and threats.
+
+A crucial distinction drawn in recent research is between being an observer of political events and being a participant in political conflict. Traditional news consumption allowed people to follow events from a distance. Social media, by inviting constant reaction, sharing, and argument, turns users into active combatants in political disputes. This participatory role appears to be especially stressful: the more actively people engage in political social media, the higher their reported levels of anxiety.
+
+The good news is that awareness itself is partly protective. Research suggests that people who understand how these systems work — who recognise that their feeds are curated to provoke rather than inform — report somewhat lower levels of political stress. Structural changes to platform design would help further. But managing our own relationship to digital political media may be one of the most important things we can do for our mental health in an age of perpetual political noise.`
   }
 ];
