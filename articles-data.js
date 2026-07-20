@@ -1135,6 +1135,65 @@ For individuals navigating between their own traditions and the pressures of glo
   },
 
   {
+    id: 62,
+    title: "Free Will and Determinism: Can You Choose Your Own Path?",
+    topic: "Philosophy",
+    difficulty: "hard",
+    readingTime: 4,
+    keyWords: ["determinism", "compatibilism", "volition", "causation", "moral responsibility"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Free_will",
+    body: `One of philosophy's oldest and most persistent questions is deceptively simple: do human beings truly make free choices, or is every decision we make the inevitable result of prior causes? The debate between free will and determinism touches the deepest questions about human nature, moral responsibility, and what it means to live a meaningful life.
+
+Determinism holds that every event, including every human thought and action, is the necessary consequence of prior events governed by the laws of nature. On this view, if we could know everything about the state of the universe at one moment, we could in principle predict every future event — including every choice you will ever make. Neuroscientific research lends some support to this view: experiments suggest that brain activity associated with a decision can be detected before the person consciously reports making that choice.
+
+The challenge this poses for ethics is serious. If our choices are determined by factors beyond our control — our genes, upbringing, circumstances — how can we hold people morally responsible for their actions? Courts, schools, and families all operate on the assumption that people could have acted differently. If determinism is true, this assumption seems deeply questionable.
+
+Many philosophers defend a position called compatibilism, which argues that free will and determinism are not actually in conflict. What matters for free will, compatibilists say, is not whether your choices were caused, but whether they were caused by the right things — specifically, by your own desires, values, and reasoning rather than external compulsion or internal disorder. A person acting freely is one whose actions flow from who they genuinely are.
+
+On this view, even in a deterministic universe, there is a real and important difference between someone who steals because they want to and someone forced at gunpoint. Moral responsibility, praise, and blame still make sense — they are social practices that shape behaviour and express our values, not metaphysical verdicts on an impossible kind of freedom.
+
+The debate remains unresolved. But thinking carefully about it invites us to question how much credit and blame we assign to individuals while overlooking the social and structural forces that shape who they become.`
+  },
+
+  {
+    id: 63,
+    title: "The Digital Divide: Technology's Unequal Promise",
+    topic: "Sociology",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["inequality", "infrastructure", "access", "marginalisation", "literacy"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Digital_divide",
+    body: `The internet is often celebrated as a great equaliser — a technology that gives anyone with a connection access to the world's information and markets. Yet for billions of people, that connection remains out of reach. The term "digital divide" describes the gap between those who have reliable access to digital technology and those who do not. Far from equalising opportunity, this gap risks deepening existing inequalities.
+
+The divide operates at multiple levels. The most visible is access: roughly one-third of the global population has little or no internet connectivity. This gap follows familiar patterns of inequality — urban areas have faster connections than rural ones; wealthier countries have far higher penetration rates than poorer ones; and within any country, lower-income households, older adults, and certain ethnic minorities are disproportionately offline.
+
+But access alone does not determine digital inclusion. Researchers distinguish between the first digital divide (who has a connection) and the second (who has the skills to use it effectively). Even when physical access is equal, significant differences in digital literacy persist. Someone who can find information, evaluate sources critically, and use software productively will benefit far more from the internet than someone who cannot. Education systems have yet to close this skills gap consistently.
+
+A third divide — increasingly recognised by scholars — concerns the quality of use. People with more education and resources tend to use the internet for activities that enhance economic opportunity: professional development, entrepreneurship, financial management. Those with fewer resources are more likely to use it primarily for entertainment. The same technology thus reinforces the advantages of the already privileged.
+
+Governments and international organisations have launched ambitious connectivity programmes, and mobile internet has dramatically expanded access in parts of Africa and Asia. But connectivity without digital skills training, affordable devices, and content in local languages delivers only a fraction of the potential benefit. Closing the digital divide requires addressing all three levels of the gap simultaneously.`
+  },
+
+  {
+    id: 64,
+    title: "The Gig Economy: Freedom, Flexibility, or Precarity?",
+    topic: "Economics",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["precarity", "autonomy", "labour rights", "platform", "freelance"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Gig_economy",
+    body: `Millions of people around the world now earn their living through digital platforms: delivering food for apps, driving passengers, completing tasks on freelance marketplaces, renting out spare rooms. This "gig economy" — characterised by short-term contracts and on-demand work rather than permanent employment — has grown rapidly over the past decade, reshaping the relationship between workers and employers in profound ways.
+
+Proponents argue that gig work offers real advantages, particularly for people who cannot or do not want to commit to standard employment schedules: students, caregivers, people with disabilities, those pursuing other projects on the side. Platforms such as Uber, Fiverr, and Airbnb allow individuals to monetise their time and assets flexibly, setting their own hours and working as much or as little as they choose. For some, this autonomy represents a genuine improvement over rigid nine-to-five structures.
+
+Critics, however, point to the structural precarity that gig work typically involves. Because platforms classify their workers as independent contractors rather than employees, gig workers are usually denied the protections that employment law provides: minimum wage guarantees, paid sick leave, pension contributions, protection against unfair dismissal, and the right to organise collectively. The apparent autonomy of the gig worker often masks a significant imbalance of power: the platform sets the rates, the algorithms assign the work, and workers bear all the financial risk of periods without income.
+
+Research consistently shows that median earnings in the gig economy are lower than those in comparable traditional employment, and that income is far more volatile. Workers who depend entirely on gig income often find themselves trapped in a cycle of uncertainty, unable to plan financially or access credit. A bad week, an algorithm change, or account suspension can be economically devastating.
+
+Legal systems in many countries are beginning to respond. Courts in the United Kingdom and several US states have ruled that certain platform workers must be classified as employees, entitling them to basic protections. The outcome of these legal battles will determine whether the gig economy matures into a genuinely flexible form of work or remains a mechanism for shifting economic risk from corporations onto individual workers.`
+  },
+
+  {
     id: 61,
     title: "Political Anxiety: How Social Media Is Stressing Us Out",
     topic: "Psychology",
