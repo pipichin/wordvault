@@ -1210,5 +1210,62 @@ Researchers point to specific features of social media as a key driver. Politica
 A crucial distinction drawn in recent research is between being an observer of political events and being a participant in political conflict. Traditional news consumption allowed people to follow events from a distance. Social media, by inviting constant reaction, sharing, and argument, turns users into active combatants in political disputes. This participatory role appears to be especially stressful: the more actively people engage in political social media, the higher their reported levels of anxiety.
 
 The good news is that awareness itself is partly protective. Research suggests that people who understand how these systems work — who recognise that their feeds are curated to provoke rather than inform — report somewhat lower levels of political stress. Structural changes to platform design would help further. But managing our own relationship to digital political media may be one of the most important things we can do for our mental health in an age of perpetual political noise.`
+  },
+
+  {
+    id: 65,
+    title: "Soft Power: How Nations Compete for Hearts and Minds",
+    topic: "International Relations",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["soft power", "influence", "coercion", "diplomacy", "legitimacy"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Soft_power",
+    body: `When people think about how nations project influence internationally, military force and economic sanctions usually come to mind first. But political scientist Joseph Nye identified another form of power that may be equally — if more subtly — important. Soft power, as Nye defined it, is the ability to shape the preferences of others through attraction and persuasion rather than coercion or payment.
+
+Soft power resources include a nation's culture, its political values, and the perceived legitimacy of its foreign policy. When audiences around the world watch South Korean dramas, admire Scandinavian social models, or aspire to study at British universities, they are responding to soft power in action. Nations that appear attractive, fair, and trustworthy can inspire others to align voluntarily with their interests — a more durable form of influence than force alone.
+
+The concept helps explain several puzzles in international relations. Why does the United States retain global cultural influence even as its military and economic dominance faces new challenges? Partly because American music, cinema, technology brands, and universities continue to attract admiration worldwide. Conversely, a country that pursues its interests through aggression may win individual confrontations while steadily eroding the goodwill that makes sustained influence possible.
+
+China and other rising powers have invested heavily in soft power strategies: funding overseas universities, launching international broadcasting networks, and framing development investments in Africa and Asia as partnerships rather than exploitation. The spread of Korean pop culture, fashion, and cuisine — a phenomenon known as Hallyu, or the Korean Wave — represents one of the most striking soft power successes in recent decades, achieved largely without government direction.
+
+Critics note that soft power is difficult to measure, slow to build, and easily damaged. Attempts to manufacture it through propaganda typically backfire, since genuine attraction cannot be engineered. But as global challenges increasingly require voluntary cooperation rather than compulsion, the ability to be genuinely admired may be one of the most valuable assets any nation can cultivate.`
+  },
+
+  {
+    id: 66,
+    title: "The Wealth Gap: Understanding Economic Inequality",
+    topic: "Economics",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["inequality", "redistribution", "Gini coefficient", "social mobility", "polarisation"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Economic_inequality",
+    body: `Across the globe, the gap between the richest and poorest members of society has been growing for decades. Income inequality — the unequal distribution of earnings and wealth within a population — has become one of the defining economic and political challenges of the twenty-first century. While some degree of inequality can incentivise effort and innovation, economists increasingly warn that today's extremes are undermining growth, social trust, and democratic stability.
+
+The scale is striking. Globally, the wealthiest 1% of individuals now hold more wealth than the bottom 50% combined. Within countries, the Gini coefficient — the standard measure of inequality, ranging from 0 for perfect equality to 1 for total concentration — has risen in most developed economies since the 1980s. The United States, the United Kingdom, and many emerging economies have experienced particularly sharp increases.
+
+Several forces drive this trend. The rise of technology-intensive industries has rewarded highly skilled workers while automating or offshoring middle-income jobs — a process economists call labour market polarisation. Globalisation has raised returns to capital while exerting downward pressure on wages in wealthier countries. Tax policies that favour investment income over earned income have further concentrated advantage among those who already own assets.
+
+The social consequences extend well beyond economics. High inequality is consistently associated with lower levels of social trust, worse public health outcomes, higher rates of crime, and reduced social mobility — the ability of individuals to improve on the economic circumstances of their birth. Research by economists Thomas Piketty and Emmanuel Saez suggests that without active redistribution, wealth naturally concentrates over time, as returns on capital tend to outpace overall economic growth.
+
+Governments have a range of tools available: progressive taxation, investment in public education and healthcare, stronger labour rights, and income transfers to lower-income households. The central debate is not whether some redistribution is desirable but how much and through what mechanisms — a question with profound implications for both justice and long-term economic performance.`
+  },
+
+  {
+    id: 67,
+    title: "Civil Disobedience: When Conscience Challenges the Law",
+    topic: "History",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["civil disobedience", "conscience", "nonviolence", "injustice", "resistance"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Civil_disobedience",
+    body: `Throughout history, some of the most significant advances in human rights and political freedom have been won not through elections alone but through a more direct method: deliberately breaking an unjust law in order to demand change. This practice — civil disobedience — has a rich philosophical tradition and a remarkable record of historical achievement.
+
+The concept was articulated most influentially by Henry David Thoreau in his 1849 essay "Resistance to Civil Government," written in protest against slavery and the US-Mexican War. Thoreau argued that individuals have a moral duty to refuse cooperation with an unjust state — that conscience must take precedence over law when the two conflict. His ideas profoundly shaped Mahatma Gandhi, who developed systematic nonviolent resistance in India, and later Martin Luther King Jr., who applied similar principles to the American civil rights movement.
+
+What distinguishes civil disobedience from ordinary lawbreaking is its moral character. Those who practise it act openly rather than secretly. They target specific unjust laws rather than rejecting legal authority as a whole. And crucially, they accept the legal consequences of their actions — often welcoming arrest as a means of exposing the injustice of the law they have broken. This willingness to face punishment is what distinguishes the principled resister from the self-interested criminal.
+
+The historical results have been significant. Gandhi's campaigns of non-cooperation contributed to India's independence in 1947. King's demonstrations in Birmingham and Selma helped produce the Civil Rights Act of 1964 and the Voting Rights Act of 1965. Suffragette activists in early twentieth-century Britain and anti-apartheid protesters in South Africa drew on the same tradition, achieving transformations that seemed impossible within existing legal frameworks.
+
+Critics argue that permitting individuals to choose which laws to follow on grounds of personal conscience undermines the rule of law itself. A democratic society, they note, provides legitimate channels for change. Defenders respond that law divorced from justice is merely the exercise of power — and that moral progress has repeatedly required the courage to resist.`
   }
 ];
