@@ -1267,5 +1267,63 @@ What distinguishes civil disobedience from ordinary lawbreaking is its moral cha
 The historical results have been significant. Gandhi's campaigns of non-cooperation contributed to India's independence in 1947. King's demonstrations in Birmingham and Selma helped produce the Civil Rights Act of 1964 and the Voting Rights Act of 1965. Suffragette activists in early twentieth-century Britain and anti-apartheid protesters in South Africa drew on the same tradition, achieving transformations that seemed impossible within existing legal frameworks.
 
 Critics argue that permitting individuals to choose which laws to follow on grounds of personal conscience undermines the rule of law itself. A democratic society, they note, provides legitimate channels for change. Defenders respond that law divorced from justice is merely the exercise of power — and that moral progress has repeatedly required the courage to resist.`
+  },
+
+
+  {
+    id: 68,
+    title: "The Rule of Law: Why No One Should Be Above It",
+    topic: "Law",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["accountability", "judiciary", "constitution", "arbitrary", "transparency"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Rule_of_law",
+    body: `One of the most fundamental principles in modern governance is deceptively simple: no person, institution, or government is above the law. This idea — known as the rule of law — holds that power must be exercised according to publicly known, consistently applied rules rather than the personal whims of those in authority. Without it, even democratically elected governments can slide toward tyranny.
+
+The rule of law has several core requirements. Laws must be publicly known and clearly written so that citizens can understand what is expected of them. They must be applied consistently and equally — a powerful politician and an ordinary citizen should face the same legal consequences for the same act. Crucially, the courts that interpret and enforce the law must be independent of political pressure, making decisions based on evidence and established legal principles rather than on instructions from the executive branch.
+
+The concept has deep historical roots. Magna Carta, signed in 1215, established that even the English king was bound by certain rules. Enlightenment thinkers such as John Locke argued that legitimate government rests on law, not on the will of rulers. The principle was later enshrined in constitutions around the world, from the United States to post-war Germany and Japan.
+
+In practice, the rule of law faces constant pressures. Governments may stack courts with loyalists, use prosecution selectively against political opponents, or issue emergency decrees that bypass normal legislative processes. Corruption allows wealth to buy legal immunity. In some countries, laws are written clearly but enforced arbitrarily, with disadvantaged groups bearing the heaviest burden of legal risk while the powerful operate with effective impunity.
+
+The strength of the rule of law shapes almost every aspect of public life — investor confidence, the protection of individual rights, the fairness of elections, and citizens’ willingness to trust institutions. International rankings consistently show that societies with strong legal institutions tend to have better economic outcomes, lower levels of violence, and higher public trust. Protecting it is therefore not a narrow legal concern but a condition for a functioning, free society.\`
+  },
+
+  {
+    id: 69,
+    title: "The Bystander Effect: Why We Don’t Help Strangers",
+    topic: "Psychology",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["bystander", "diffusion", "intervention", "pluralistic ignorance", "responsibility"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Bystander_effect",
+    body: `Imagine you witness someone collapse on a crowded street. You look around and notice that dozens of people have stopped to watch, yet nobody moves to help. You hesitate too. This uncomfortable scenario illustrates one of social psychology’s most well-documented findings: the bystander effect — the tendency for individuals to be less likely to offer help in an emergency when other people are present.
+
+The phenomenon was first investigated systematically by psychologists John Darley and Bibb Latané following a high-profile incident in New York in 1964. Their experiments showed that the larger the group of bystanders, the less likely any one individual was to respond to a staged emergency. When alone, participants intervened around 70% of the time; in groups of five, that figure dropped to roughly 30%.
+
+Two psychological mechanisms drive this pattern. The first is diffusion of responsibility: in a crowd, each person feels that someone else will surely take action, reducing any individual’s felt obligation to act. The second is pluralistic ignorance — when people look to others for cues about how to interpret an ambiguous situation, and everyone else appears calm, each person assumes the situation is not as serious as it seems. This mutual reassurance can prevent anyone from responding even to a genuine emergency.
+
+The effect is not absolute. Bystanders who have relevant expertise — medical training, for example — intervene more readily. When a victim makes direct eye contact with a specific individual and calls on them by name or description, responsibility can no longer be diffused, and intervention rates rise sharply. In an emergency, asking one specific person for help is far more effective than making a general appeal to a crowd.
+
+Understanding the bystander effect matters beyond dramatic emergencies. It helps explain passive responses to workplace bullying, online harassment, and political oppression — situations where the presence of many silent observers can make each individual feel absolved of a duty to speak up. Recognising the mechanism is itself a first step toward resisting it.\`
+  },
+
+  {
+    id: 70,
+    title: "Moral Panic: When Societies Overreact to Perceived Threats",
+    topic: "Sociology",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["moral panic", "folk devils", "amplification", "deviance", "scapegoat"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Moral_panic",
+    body: `Every generation seems to produce a new set of threats that provoke intense public alarm — folk music, comic books, video games, social media, youth gangs. Sociologist Stanley Cohen gave this recurring phenomenon a precise name in his landmark 1972 book: moral panic. He defined it as a condition in which a person, group, or episode comes to be regarded as a threat to societal values and interests, triggering a response from authorities and the media that is disproportionate to the actual danger involved.
+
+Cohen identified several key elements that moral panics share. At the centre is what he called a “folk devil” — a group whose behaviour is portrayed as deviant and dangerous, whether drug users, immigrants, or young people in general. Their threat is amplified by media coverage that combines exaggeration, distortion, and moralising commentary. This creates a feedback loop: public anxiety rises, which generates more alarming coverage, which raises anxiety further. Experts, law enforcement, and politicians are then drawn in, often proposing responses that may outlast the panic long after the original concern has faded.
+
+Historical examples illustrate the pattern clearly. The “Satanic panic” of the 1980s in the United States led to numerous wrongful prosecutions based on largely fabricated claims about ritual abuse. Concerns about juvenile delinquency in 1950s Britain produced harsh sentencing reforms. More recently, alarm about online radicalisation and violent video games has at times outpaced the evidence, shaping legislation nonetheless.
+
+Cohen noted that moral panics serve social functions even when their targets are exaggerated. They reaffirm collective values by identifying what a community stands against. They can also shift attention away from structural problems — economic hardship, political failure — by channelling anxiety toward a visible scapegoat. In this sense, moral panics tell us less about the dangers they describe and more about the anxieties and power structures of the society that produces them.
+
+Critics of the concept argue that it can be misused to dismiss genuine social concerns as overblown. Not every public alarm is a panic, and some fears that seem exaggerated do reflect real risks. The value of Cohen’s framework lies not in automatically discounting public concern but in encouraging careful scrutiny: asking who benefits from the alarm, whose voices are amplified, and whether the proposed responses are truly proportionate to the evidence.\`
   }
 ];
