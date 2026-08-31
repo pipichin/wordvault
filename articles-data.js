@@ -1325,5 +1325,66 @@ Historical examples illustrate the pattern clearly. The “Satanic panic” of t
 Cohen noted that moral panics serve social functions even when their targets are exaggerated. They reaffirm collective values by identifying what a community stands against. They can also shift attention away from structural problems — economic hardship, political failure — by channelling anxiety toward a visible scapegoat. In this sense, moral panics tell us less about the dangers they describe and more about the anxieties and power structures of the society that produces them.
 
 Critics of the concept argue that it can be misused to dismiss genuine social concerns as overblown. Not every public alarm is a panic, and some fears that seem exaggerated do reflect real risks. The value of Cohen’s framework lies not in automatically discounting public concern but in encouraging careful scrutiny: asking who benefits from the alarm, whose voices are amplified, and whether the proposed responses are truly proportionate to the evidence.\`
+  },
+
+  {
+    id: 71,
+    title: "Justice as Fairness: John Rawls and the Veil of Ignorance",
+    topic: "Philosophy",
+    difficulty: "hard",
+    readingTime: 4,
+    keyWords: ["fairness", "veil of ignorance", "redistribution", "inequality", "justice"],
+    sourceUrl: "https://en.wikipedia.org/wiki/A_Theory_of_Justice",
+    body: `John Rawls, an American philosopher who published his landmark work A Theory of Justice in 1971, proposed one of the most influential frameworks for thinking about fairness and social justice in the modern era. His central question was deceptively simple: what principles of justice would people choose if they did not know who they were going to be in society?
+
+To answer this, Rawls introduced a thought experiment he called the "original position." Imagine you are asked to design the basic rules of a society — but you must do so from behind a "veil of ignorance." You do not know whether you will be born rich or poor, male or female, talented or less capable, belonging to a majority or a minority. From this starting point, Rawls argued, rational people would choose principles that protect everyone, because any one of us might end up in the least advantaged position.
+
+From this thought experiment, Rawls derived two principles of justice. The first holds that everyone should have equal basic liberties — freedom of speech, assembly, and conscience. The second, called the "difference principle," states that social and economic inequalities are only acceptable if they benefit the least well-off members of society. Inequality is not inherently unjust, but it must work to lift those at the bottom, not merely to enrich those at the top.
+
+Rawls’s framework provided a rigorous philosophical basis for progressive taxation, universal healthcare, and public education — on the grounds that those who are born with talent or into wealthy families benefit from social circumstances they did not choose. Fairness, for Rawls, requires compensating for the arbitrariness of birth.
+
+Critics challenged the theory from both sides. Libertarians like Robert Nozick argued that any redistribution of wealth, however well-intentioned, violates individual rights. Communitarians objected that Rawls’s imaginary person behind the veil of ignorance is an abstraction with no real culture or identity — and that actual justice must be grounded in specific traditions and relationships.
+
+Despite these challenges, Rawls’s veil of ignorance remains one of the most useful tools in political philosophy. It cuts through partisan self-interest to ask a deeper question: what rules could we all agree to, if we genuinely did not know which side of those rules we would find ourselves on?`
+  },
+
+  {
+    id: 72,
+    title: "Game Theory: The Logic of Strategic Decision-Making",
+    topic: "Economics",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["prisoner’s dilemma", "equilibrium", "strategic", "cooperation", "rational"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Game_theory",
+    body: `Why do nations sometimes fail to cooperate even when cooperation would benefit everyone? Why do companies race to cut costs in ways that harm their entire industry? Game theory — the mathematical study of strategic interaction — offers a powerful framework for understanding these puzzles.
+
+Game theory emerged as a formal discipline in the 1940s, when mathematician John von Neumann and economist Oskar Morgenstern published their foundational work. It models situations where the outcome of your decision depends not only on what you choose, but on what others choose at the same time. In such situations, the "best" strategy for any one person depends on what everyone else is likely to do.
+
+The most famous example is the prisoner’s dilemma. Two suspects are held separately. Each is offered the same deal: if one confesses and the other stays silent, the confessor goes free and the silent partner receives a heavy sentence. If both confess, both receive moderate sentences. If both stay silent, both receive only minor penalties. The dilemma is that confessing is the individually rational choice — regardless of what the other does. But if both follow this logic, they both end up worse off than if they had cooperated.
+
+The concept of Nash equilibrium, named after mathematician John Nash, describes the stable outcome in such situations: a point where no player can improve their result by changing strategy alone. Nash equilibria are not always optimal for everyone — the prisoner’s dilemma reaches a Nash equilibrium where both confess, even though mutual silence would be better for both.
+
+Game theory has found applications far beyond economics. It helps explain nuclear deterrence, trade negotiations, climate agreements, and even the evolution of cooperation in biology. It shows why collective action problems — where individual rational choices produce collectively irrational outcomes — are so persistent and difficult to solve.
+
+The deeper lesson of game theory is not cynicism but clarity. Understanding how strategic incentives work is the first step toward designing institutions and agreements that align individual interests with collective wellbeing — turning the logic of the prisoner’s dilemma into something closer to genuine cooperation.`
+  },
+
+  {
+    id: 73,
+    title: "Social Capital: The Hidden Bonds That Hold Communities Together",
+    topic: "Sociology",
+    difficulty: "medium",
+    readingTime: 3,
+    keyWords: ["social capital", "civic engagement", "trust", "reciprocity", "network"],
+    sourceUrl: "https://en.wikipedia.org/wiki/Social_capital",
+    body: `When people talk about wealth, they usually mean money, property, or marketable skills. But the political scientist Robert Putnam identified a different and often overlooked kind of resource: social capital — the networks, norms of reciprocity, and trust that connect people to one another and make collective action possible.
+
+Putnam developed the concept most influentially in his 2000 book Bowling Alone, which documented a dramatic decline in civic participation in the United States over the second half of the twentieth century. Americans were increasingly disconnected from community organizations — churches, unions, parent-teacher associations, and local clubs — that had once bound them into dense webs of relationship and mutual obligation. People were still bowling, Putnam noted, but increasingly alone.
+
+Social capital comes in two broad forms. Bonding capital refers to strong ties within relatively homogeneous groups — the close relationships between family members, religious congregants, or long-term neighbors. These bonds provide emotional support and material help in times of need. Bridging capital, by contrast, refers to weaker but wider ties that connect people across different social groups — the acquaintances, colleagues, and community contacts that open doors to new information and opportunities. Both forms are valuable, but they serve different social functions.
+
+The political and economic consequences of social capital are significant. Research consistently finds that communities with higher levels of social trust and civic engagement tend to have better-functioning governments, lower crime rates, stronger economic performance, and better public health outcomes. Where people trust their neighbors and institutions, collective problems are easier to address and democratic participation is higher.
+
+The erosion of social capital is therefore a serious concern. Putnam attributed its decline partly to television and, more recently, digital technology, which substitute passive consumption for active participation. Long working hours, suburban sprawl, and residential mobility have all played a role too. Rebuilding it requires deliberate investment in the kinds of shared institutions and public spaces where genuine relationships can form — the slower, less measurable bonds of real community life that no algorithm can replicate.`
   }
 ];
